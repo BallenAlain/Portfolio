@@ -24,11 +24,10 @@ header {
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 1rem 1rem;
 }
 
 .content-container {
-  padding-top: 8rem; 
+  padding-top: 5rem; 
   padding-bottom: 5rem;
   width: 100%;
   background-color: white;
