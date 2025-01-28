@@ -23,7 +23,7 @@
 
 <style scoped>
 .navbar {
-    background-color: #ffffff;
+    background-color: var(--vt-c-white);
     padding: 1rem 0;
     border-bottom: 2px solid #4b7bed7b
 }
@@ -51,7 +51,7 @@
     font-weight: 600;
     transition: all 0.3s ease;
     text-decoration: none;
-    color: #4b7ced;
+    color: var(--alainblue);
 }
 
 .nav-links {
@@ -61,7 +61,7 @@
 
 .nav-link {
     text-decoration: none;
-    color: #2c3e50;
+    color: var(--text-dark);
     font-weight: 500;
     padding-right: 1rem;
     transition: color 0.3s ease;
@@ -69,7 +69,7 @@
 }
 
 .nav-link:hover {
-    color: #4b7ced;
+    color: var(--alainblue);
 }
 
 .last-name {

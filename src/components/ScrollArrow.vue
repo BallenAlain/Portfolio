@@ -3,7 +3,7 @@
 </template>
 <style>
 .arrow {
-    border: solid #4b7ced;
+    border: solid var(--alainblue);
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 20px;

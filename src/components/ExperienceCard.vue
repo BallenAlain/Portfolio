@@ -61,7 +61,7 @@ export default defineComponent ({
     .card-content p {
         font-size: 12px;
         margin-bottom: 20px;
-        color:#505050;
+        color:var(--text-dark);
     }
 
 </style>

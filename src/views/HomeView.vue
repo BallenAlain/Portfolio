@@ -77,11 +77,12 @@ const items = jsonData;
 }
 
 .name {
-  color: #4b7ced;
+  color: var(--alainblue);
 }
 
 .hero {
   line-height: 1.2;
+  color:var(--text-dark);
   font-size: clamp(2rem, 5vw, 3.5rem); /* Responsive font size */
   margin: 0 0 1rem 0; /* Add margin below h1 to prevent h2 from pushing it up */
 }
