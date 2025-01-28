@@ -11,7 +11,8 @@
     left: 0rem;
     padding: 1rem 1rem 1rem 2rem;
     font-size: 0.9rem;
-    color: #666;
+    color: #545454;
+    background-color: rgba(255, 255, 255, 0.555);
     z-index: 999;
     width: 100%;
   }
