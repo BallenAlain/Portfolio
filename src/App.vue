@@ -8,11 +8,12 @@ import CopyrightFooter from './components/CopyrightFooter.vue';
   <header>
     <NavBar />
   </header>
-
-  <footer>
-    <CopyrightFooter />
-  </footer>
-  <RouterView />
+  <main>
+    <div class="content-container">
+    <RouterView />
+  </div>
+  </main>
+  <CopyrightFooter />
 </template>
 
 <style scoped>
@@ -26,4 +27,10 @@ header {
   padding: 1rem 1rem;
 }
 
+.content-container {
+  padding-top: 8rem; 
+  padding-bottom: 5rem;
+  width: 100%;
+  background-color: white;
+}
 </style>
