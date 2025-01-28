@@ -21,7 +21,7 @@ const handleMouseMove = (event: MouseEvent) => {
   const deltaY = clientY - centerY;
 
   // Move the image slightly towards the cursor
-  const moveDistance = 10; // Adjust this value to control the strength of the effect
+  const moveDistance = 20; // Adjust this value to control the strength of the effect
   const translateX = (deltaX / rect.width) * moveDistance;
   const translateY = (deltaY / rect.height) * moveDistance;
 
