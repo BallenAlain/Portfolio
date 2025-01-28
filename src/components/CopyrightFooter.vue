@@ -12,7 +12,6 @@
     padding: 1rem 1rem 1rem 2rem;
     font-size: 0.9rem;
     color: #666;
-    background-color: rgba(255, 255, 255, 0.9);
     z-index: 999;
     width: 100%;
   }

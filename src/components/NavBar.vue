@@ -65,6 +65,7 @@
     font-weight: 500;
     padding-right: 1rem;
     transition: color 0.3s ease;
+    font-size: 1rem;
 }
 
 .nav-link:hover {

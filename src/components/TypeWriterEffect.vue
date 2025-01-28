@@ -17,7 +17,7 @@
       },
       speed: {
         type: Number,
-        default: 50, 
+        default: 40, 
       },
       delay: {
         type: Number,

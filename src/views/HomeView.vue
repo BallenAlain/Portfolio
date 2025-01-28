@@ -1,31 +1,40 @@
 <script setup lang="ts">
-import TypeWriterEffect from '../components/TypeWriterEffect.vue';
+import TypeWriterEffect from '@/components/TypeWriterEffect.vue';
+import HeroImage from '@/components/HeroImage.vue';
+import ScrollSnap from '@/components/ScrollSnap.vue';
 </script>
 
 <template>
   <main>
     <div class="hero-container">
+      <div class="text-image">
       <div class="text-container">
         <h1 class="hero">
           Hi there! <span class="name">I'm Alain</span>
         </h1>
         <h2>
-          <TypeWriterEffect :text="`A software engineer looking to create impactful software.`"></TypeWriterEffect>
+          <TypeWriterEffect :text="`A Software Engineer new graduate looking to create impactful software.`"></TypeWriterEffect>
         </h2>
       </div>
-      <img src="../assets/animation-hero.gif" alt="Logo" class="hero-image" />
+      <HeroImage />
+    </div>
+      <ScrollSnap />
     </div>
   </main>
 </template>
 
 <style>
 .hero-container {
+  text-align:center;
+}
+
+.text-image {
   display: flex;
   max-width: 100%;
   align-items: center; /* Vertically center all items */
   justify-content: space-between; /* Space out text and image */
   gap: 5%; /* Use percentage for gap to make it responsive */
-  padding: 5% 10%; /* Use percentage for padding */
+  padding: 5% 10% 2% 10%; /* Use percentage for padding */
 }
 
 .text-container {
@@ -49,26 +58,18 @@ h2 {
   min-height: 4em; /* Ensure consistent height for h2 */
 }
 
-.hero-image {
-  width: 100%;
-  max-width: 500px; /* Set a max-width for the image */
-  height: auto;
-}
 
 /* Responsive adjustments */
 @media (max-width: 1240px) {
-  .hero-container {
+  .text-image {
     gap: 3%; /* Reduce gap for medium screens */
     padding: 5% 5%; /* Reduce padding for medium screens */
   }
 
-  .hero-image {
-    max-width: 350px; /* Smaller image for medium screens */
-  }
 }
 
 @media (max-width: 768px) {
-  .hero-container {
+  .text-image {
     flex-direction: column; /* Stack vertically on smaller screens */
     text-align: center; /* Center text on smaller screens */
     justify-content: center; /* Center items horizontally */
@@ -77,7 +78,7 @@ h2 {
   }
 
   .hero-image {
-    max-width: 200px; /* Smaller image for mobile */
+    max-width: 400px; /* Smaller image for mobile */
     order: -1; /* Move image to the top */
     margin: 0 auto; /* Center image horizontally */
   }
