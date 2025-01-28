@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import TypeWriterEffect from '@/components/TypeWriterEffect.vue';
 import HeroImage from '@/components/HeroImage.vue';
-import ScrollSnap from '@/components/ScrollSnap.vue';
+import ScrollArrow from '@/components/ScrollArrow.vue';
 </script>
 
 <template>
@@ -13,12 +13,18 @@ import ScrollSnap from '@/components/ScrollSnap.vue';
           Hi there! <span class="name">I'm Alain</span>
         </h1>
         <h2>
-          <TypeWriterEffect :text="`A Software Engineer new graduate looking to create impactful software.`"></TypeWriterEffect>
+          <TypeWriterEffect :text="`A Software Engineer building tomorrow’s solutions.`"></TypeWriterEffect>
         </h2>
+        <br>
+        <br>
+        Find me on linkedin and github
       </div>
       <HeroImage />
     </div>
-      <ScrollSnap />
+      <a href="#work"><ScrollArrow /></a>
+    </div>
+    <div class="content-container">
+      <section id="work">work</section>
     </div>
   </main>
 </template>
@@ -26,6 +32,8 @@ import ScrollSnap from '@/components/ScrollSnap.vue';
 <style>
 .hero-container {
   text-align:center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .text-image {
@@ -90,5 +98,17 @@ h2 {
   h2 {
     min-height: auto; /* Allow h2 to shrink on smaller screens */
   }
+}
+
+.content-container {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding-top:13rem;
+  min-height:100vh;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 </style>
