@@ -61,8 +61,8 @@
   .typewriter {
     display: inline-block;
     color: #4b7ced;
-    min-width: 30vw;
-    max-width: 80vw;
+    min-width: 22vw;
+    max-width: 22vw;
     font-size: 1.2em;
     line-height: 1.2;
     white-space: pre-wrap;
