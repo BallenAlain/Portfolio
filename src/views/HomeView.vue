@@ -2,6 +2,10 @@
 import TypeWriterEffect from '@/components/TypeWriterEffect.vue';
 import HeroImage from '@/components/HeroImage.vue';
 import ScrollArrow from '@/components/ScrollArrow.vue';
+import ExperienceCard from '@/components/ExperienceCard.vue';
+import jsonData from '@/data/work.json';
+
+const items = jsonData;
 </script>
 
 <template>
@@ -17,14 +21,35 @@ import ScrollArrow from '@/components/ScrollArrow.vue';
         </h2>
         <br>
         <br>
-        Find me on linkedin and github
+        <h2>
+          <a href="https://github.com/BallenAlain" target="_blank"
+        ><img
+          class="socials"
+          src="@/assets/github.png"
+          width="30"
+          height="30"
+      /></a>&nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="https://www.linkedin.com/in/alain-ballen/" target="_blank"
+        ><img
+          class="socials"
+          src="@/assets/linkedin.png"
+          width="30"
+          height="30"
+      /></a>
+        </h2>
       </div>
       <HeroImage />
     </div>
       <a href="#work"><ScrollArrow /></a>
     </div>
     <div class="content-container">
-      <section id="work">work</section>
+      <section id="work"></section>
+      <br><br><br>
+      <ExperienceCard v-for="work in items" 
+        :key="work.company" 
+        :company="work.company"
+        :product="work.product"
+        :imagePath="work.imagePath"/>
     </div>
   </main>
 </template>
@@ -34,6 +59,7 @@ import ScrollArrow from '@/components/ScrollArrow.vue';
   text-align:center;
   align-items: center;
   min-height: 100vh;
+  padding-top:5%;
 }
 
 .text-image {
@@ -42,7 +68,7 @@ import ScrollArrow from '@/components/ScrollArrow.vue';
   align-items: center; /* Vertically center all items */
   justify-content: space-between; /* Space out text and image */
   gap: 5%; /* Use percentage for gap to make it responsive */
-  padding: 5% 10% 2% 10%; /* Use percentage for padding */
+  padding: 0% 5% 2% 10%; /* Use percentage for padding */
 }
 
 .text-container {
@@ -101,11 +127,13 @@ h2 {
 }
 
 .content-container {
-  display: block;
-  text-align: center;
   width: 100%;
   padding-top:13rem;
   min-height:100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50rem;
 }
 
 html {
