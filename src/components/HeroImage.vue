@@ -55,7 +55,7 @@ onUnmounted(() => {
 <style scoped>
 .hero-image {
   width: 100%;
-  max-width: 500px; /* Set a max-width for the image */
+  max-width: 600px; /* Set a max-width for the image */
   height: auto;
   transition: transform 0.3s ease; /* Smooth transition for the nudge effect */
 }
