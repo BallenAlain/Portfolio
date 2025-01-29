@@ -7,7 +7,6 @@
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 20px;
-    margin-top: 3em;
     cursor: pointer;
 }
 

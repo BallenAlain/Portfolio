@@ -49,6 +49,7 @@ const items = jsonData;
         :key="work.company" 
         :company="work.company"
         :product="work.product"
+        :productDetails="work.productDetails"
         :imagePath="work.imagePath"
         :skillsIcon="work.skills"
       />
@@ -70,7 +71,7 @@ const items = jsonData;
   align-items: center; /* Vertically center all items */
   justify-content: space-between; /* Space out text and image */
   gap: 5%; /* Use percentage for gap to make it responsive */
-  padding: 0% 5% 2% 10%; /* Use percentage for padding */
+  padding: 0% 5% 0% 10%; /* Use percentage for padding */
 }
 
 .text-container {
@@ -101,7 +102,7 @@ h2 {
 @media (max-width: 1240px) {
   .text-image {
     gap: 3%; /* Reduce gap for medium screens */
-    padding: 5% 5%; /* Reduce padding for medium screens */
+    padding: 0% 5%; /* Reduce padding for medium screens */
   }
 
   .hero {
@@ -141,7 +142,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50rem;
+  margin-bottom: 0;
 }
 
 html {
