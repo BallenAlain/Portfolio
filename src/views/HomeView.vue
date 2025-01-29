@@ -44,7 +44,6 @@ const items = jsonData;
     </div>
     <div class="content-container">
       <section id="work"></section>
-      <br><br><br>
       <ExperienceCard v-for="work in items" 
         :key="work.company" 
         :company="work.company"
@@ -63,20 +62,20 @@ const items = jsonData;
   text-align:center;
   align-items: center;
   min-height: 100vh;
-  padding-top:5%;
+  padding-top: 5%;
 }
 
 .text-image {
   display: flex;
   max-width: 100%;
-  align-items: center; /* Vertically center all items */
-  justify-content: space-between; /* Space out text and image */
-  gap: 5%; /* Use percentage for gap to make it responsive */
-  padding: 0% 5% 0% 10%; /* Use percentage for padding */
+  align-items: center;
+  justify-content: space-between; 
+  gap: 5%;
+  padding: 0% 5% 0% 10%; 
 }
 
 .text-container {
-  flex: 1; /* Allow text container to grow and shrink */
+  flex: 1;
   text-align: left;
 }
 
@@ -88,22 +87,20 @@ const items = jsonData;
   line-height: 1.2;
   min-width: 10em;
   color:var(--text-dark);
-  font-size: clamp(2rem, 5vw, 3.5rem); /* Responsive font size */
-  margin: 0 0 1rem 0; /* Add margin below h1 to prevent h2 from pushing it up */
+  font-size: clamp(2rem, 5vw, 3.5rem); 
+  margin: 0 0 1rem 0;
 }
 
 h2 {
-  font-size: clamp(1rem, 2.5vw, 1.5rem); /* Responsive font size */
+  font-size: clamp(1rem, 2.5vw, 1.5rem); 
   margin: 0;
-  min-height: 4em; /* Ensure consistent height for h2 */
+  min-height: 4em; 
 }
 
-
-/* Responsive adjustments */
 @media (max-width: 1240px) {
   .text-image {
-    gap: 3%; /* Reduce gap for medium screens */
-    padding: 0% 5%; /* Reduce padding for medium screens */
+    gap: 3%;
+    padding: 0% 5%; 
   }
 
   .hero {
@@ -114,26 +111,26 @@ h2 {
 
 @media (max-width: 768px) {
   .text-image {
-    flex-direction: column; /* Stack vertically on smaller screens */
-    text-align: center; /* Center text on smaller screens */
-    justify-content: center; /* Center items horizontally */
-    gap: 2rem; /* Adjust gap for smaller screens */
-    padding: 2rem; /* Reduce padding for smaller screens */
+    flex-direction: column; 
+    text-align: center;
+    justify-content: center;
+    gap: 2rem; 
+    padding: 2rem;
   }
 
   .hero-image {
-    max-width: 400px; /* Smaller image for mobile */
-    order: -1; /* Move image to the top */
-    margin: 0 auto; /* Center image horizontally */
+    max-width: 400px;
+    order: -1;
+    margin: 0 auto;
   }
 
   .text-container {
-    text-align: center; /* Center text on smaller screens */
+    text-align: center;
   }
 
 
   h2 {
-    min-height: auto; /* Allow h2 to shrink on smaller screens */
+    min-height: auto;
   }
 }
 

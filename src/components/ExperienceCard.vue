@@ -98,6 +98,7 @@ export default defineComponent({
     justify-content: center;
     gap: 2rem;
     padding: 10rem 5%;
+    padding-bottom: 40rem;
     max-height: none;
     opacity: 0;
     transform: translate(0, 10vh);
@@ -118,7 +119,7 @@ export default defineComponent({
 }
 
 .card:last-child {
-    padding: 9rem 5%;
+    padding: 20rem 5%;
 }
 
 .card-content {
@@ -167,7 +168,6 @@ export default defineComponent({
     background-color: #2a5eb3;
 }
 
-/* Skills icons */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -177,23 +177,12 @@ export default defineComponent({
 
 @media (max-width: 1250px) {
     .card {
-
         flex-wrap: nowrap;
-
         padding: 10rem 5%;
-        /* Adjust padding to save space */
 
     }
-
     .card-content {
         padding: 1rem;
-    }
-
-    .image {
-
-        max-width: 50%;
-        /* Take the other half */
-
     }
 }
 

@@ -2,30 +2,21 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 
 const heroImage = ref<HTMLImageElement | null>(null);
+const isVisible = ref(false);
 
 const handleMouseMove = (event: MouseEvent) => {
-  if (!heroImage.value) return;
+  if (!heroImage.value || !isVisible.value) return;
 
-  // Get the cursor's position relative to the viewport
   const { clientX, clientY } = event;
-
-  // Get the image's bounding box
   const rect = heroImage.value.getBoundingClientRect();
-
-  // Calculate the center of the image
   const centerX = rect.left + rect.width / 2;
   const centerY = rect.top + rect.height / 2;
-
-  // Calculate the distance between the cursor and the center of the image
   const deltaX = clientX - centerX;
   const deltaY = clientY - centerY;
-
-  // Move the image slightly towards the cursor
-  const moveDistance = 20; // Adjust this value to control the strength of the effect
+  const moveDistance = 20;
   const translateX = (deltaX / rect.width) * moveDistance;
   const translateY = (deltaY / rect.height) * moveDistance;
 
-  // Apply the transformation
   heroImage.value.style.transform = `translate(${translateX}px, ${translateY}px)`;
 };
 
@@ -35,14 +26,30 @@ const resetImagePosition = () => {
   }
 };
 
-// Add event listeners
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      isVisible.value = entry.isIntersecting;
+      if (!entry.isIntersecting) {
+        resetImagePosition();
+      }
+    });
+  },
+  { threshold: 0.5 } 
+);
+
 onMounted(() => {
+  if (heroImage.value) {
+    observer.observe(heroImage.value);
+  }
   window.addEventListener('mousemove', handleMouseMove);
-  window.addEventListener('mouseleave', resetImagePosition); // Reset when the cursor leaves the screen
+  window.addEventListener('mouseleave', resetImagePosition);
 });
 
-// Clean up event listeners
 onUnmounted(() => {
+  if (heroImage.value) {
+    observer.unobserve(heroImage.value);
+  }
   window.removeEventListener('mousemove', handleMouseMove);
   window.removeEventListener('mouseleave', resetImagePosition);
 });
@@ -55,23 +62,22 @@ onUnmounted(() => {
 <style scoped>
 .hero-image {
   width: 100%;
-  max-width: 600px; /* Set a max-width for the image */
+  max-width: 600px;
   height: auto;
-  transition: transform 0.3s ease; /* Smooth transition for the nudge effect */
+  transition: transform 0.3s ease;
 }
 
 @media (max-width: 1240px) {
-    .hero-image {
-    max-width: 400px; /* Smaller image for medium screens */
-    height: auto;
+  .hero-image {
+    max-width: 400px;
   }
 }
 
 @media (max-width: 768px) {
-    .hero-image {
-    max-width: 400px; /* Smaller image for mobile */
-    order: -1; /* Move image to the top */
-    margin: 0 auto; /* Center image horizontally */
+  .hero-image {
+    max-width: 400px;
+    order: -1;
+    margin: 0 auto;
   }
 }
 </style>
