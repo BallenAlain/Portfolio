@@ -10,7 +10,7 @@ import CopyrightFooter from './components/CopyrightFooter.vue';
   </header>
   <main>
     <div class="content-container">
-    <RouterView />
+    <RouterView v-motion-fade duration="300"/>
   </div>
   </main>
   <CopyrightFooter />
