@@ -55,6 +55,7 @@ const items = jsonData
   text-align: center;
   align-items: center;
   min-height: 100vh;
+  padding-left:5em;
   padding-top: 5%;
 }
 
@@ -62,9 +63,8 @@ const items = jsonData
   display: flex;
   max-width: 100%;
   align-items: center;
-  justify-content: space-between;
-  gap: 5%;
-  padding: 0% 5% 0% 10%;
+  justify-content: center;
+ 
 }
 
 .text-container {
@@ -96,12 +96,16 @@ h2 {
     padding: 0% 5%;
   }
 
+  .hero-container {
+    padding-top:20%;
+  }
+
   .hero {
     min-width: 5em;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .text-image {
     flex-direction: column;
     text-align: center;
@@ -118,6 +122,7 @@ h2 {
 
   .text-container {
     text-align: center;
+    max-width: 100%;
   }
 
   h2 {
