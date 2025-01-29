@@ -80,8 +80,8 @@ export default defineComponent({
         ><router-link :to="path" class="link"> Learn more </router-link></a
       >
     </div>
-    <div class="order" v-motion-slide-visible-left :duration="500" :delay="200">
-      <img class="image" :src="imagePath" height="500" width="500" />
+    <div class="image" v-motion-slide-visible-left :duration="500" :delay="200">
+      <img :src="imagePath" height="500" width="500" />
     </div>
   </div>
 </template>
@@ -123,7 +123,7 @@ export default defineComponent({
 }
 
 .card:last-child {
-  padding: 20rem 5%;
+  padding: 8rem 5%;
 }
 
 .card-content {
@@ -206,9 +206,6 @@ export default defineComponent({
   .image {
     max-width: 500px;
     max-height: 500px;
-  }
-
-  .order {
     order: -1;
   }
 
