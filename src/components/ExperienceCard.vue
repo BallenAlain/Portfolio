@@ -60,7 +60,7 @@ export default defineComponent({
 <template>
     <div class="card" v-motion-fade-visible>
         <div class="card-content" v-motion-slide-visible-top :duration="500" :delay="100">
-            <h3>{{ product }}</h3>
+            <h3 class="product">{{ product }}</h3>
             <h1 class="company">{{ company }}</h1>
             <p class="details">{{ productDetails }}</p>
             <br>
@@ -74,23 +74,27 @@ export default defineComponent({
             <a href="" class="learn-more"><router-link :to=path class="link">
                     Learn more
                 </router-link></a>
-            
+
         </div>
-        <div class="image" v-motion-slide-visible-left :duration="500" :delay="200">
-            <img :src=imagePath height="500" width="300">
+        <div class="order" v-motion-slide-visible-left :duration="500" :delay="200">
+            <img class="image" :src=imagePath height="500" width="500">
         </div>
     </div>
 </template>
 
 <style scoped>
+.product {
+    font-size: 1em;
+}
 
-.link{
+.link {
     text-decoration: none;
     color: white;
 }
+
 .card {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     gap: 2rem;
     padding: 10rem 5%;
@@ -122,6 +126,9 @@ export default defineComponent({
     max-width: 600px;
     padding: 2rem;
     text-align: left;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    background-color: #4b7bed4b;
 }
 
 .card-content h1 {
@@ -179,12 +186,7 @@ export default defineComponent({
     }
 
     .card-content {
-
-        max-width: 50%;
-        /* Take half the space */
-
         padding: 1rem;
-
     }
 
     .image {
@@ -206,11 +208,17 @@ export default defineComponent({
     .card-content {
         text-align: center;
         padding: 1rem;
+        border-top-left-radius: 0%;
+        border-bottom-right-radius: 10%;
     }
 
     .image {
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+    .order {
         order: -1;
-        max-width: 300px;
     }
 
     .skills-container {
