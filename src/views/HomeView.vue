@@ -52,6 +52,7 @@ const items = jsonData;
         :productDetails="work.productDetails"
         :imagePath="work.imagePath"
         :skillsIcon="work.skills"
+        :path="work.path"
       />
     </div>
   </main>

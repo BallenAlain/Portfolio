@@ -47,8 +47,11 @@ export default defineComponent({
         },
         skillsIcon: {
             type: Array<skills>,
-            required: true,
-
+            required: true
+        },
+        path: {
+            type: String,
+            required: true
         }
     }
 })
@@ -68,7 +71,10 @@ export default defineComponent({
             </span>
             <br>
             <br>
-            <a href="" class="learn-more">Learn more</a>
+            <a href="" class="learn-more"><router-link :to=path class="link">
+                    Learn more
+                </router-link></a>
+            
         </div>
         <div class="image" v-motion-slide-visible-left :duration="500" :delay="200">
             <img :src=imagePath height="500" width="300">
@@ -77,6 +83,11 @@ export default defineComponent({
 </template>
 
 <style scoped>
+
+.link{
+    text-decoration: none;
+    color: white;
+}
 .card {
     display: flex;
     flex-wrap: wrap;
@@ -140,7 +151,6 @@ export default defineComponent({
     display: inline-block;
     padding: 0.8rem 1.5rem;
     background-color: var(--alainblue);
-    color: white;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;

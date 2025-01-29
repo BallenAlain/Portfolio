@@ -25,7 +25,8 @@
           "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
           "delay": 3000
         }
-      ]
+      ],
+      "path": "/intelligentinnovationslab"
     },
     {
       "company": "rout3",
@@ -53,7 +54,8 @@
           "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg",
           "delay": 3000
         }
-      ]
+      ],
+      "path": "/rout3"
     },
     {
       "company": "Nuula",
@@ -86,6 +88,7 @@
           "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg",
           "delay": 3500
         }
-      ]
+      ],
+      "path": "/nuula"
     }
   ]
