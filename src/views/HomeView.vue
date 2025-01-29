@@ -1,51 +1,44 @@
 <script setup lang="ts">
-import TypeWriterEffect from '@/components/TypeWriterEffect.vue';
-import HeroImage from '@/components/HeroImage.vue';
-import ScrollArrow from '@/components/ScrollArrow.vue';
-import ExperienceCard from '@/components/ExperienceCard.vue';
-import jsonData from '@/data/work.json';
+import TypeWriterEffect from '@/components/TypeWriterEffect.vue'
+import HeroImage from '@/components/HeroImage.vue'
+import ScrollArrow from '@/components/ScrollArrow.vue'
+import ExperienceCard from '@/components/ExperienceCard.vue'
+import jsonData from '@/data/work.json'
 
-const items = jsonData;
+const items = jsonData
 </script>
 
 <template>
   <main>
     <div class="hero-container">
       <div class="text-image">
-      <div class="text-container">
-        <h1 class="hero">
-          Hi there! <span class="name">I'm Alain</span>
-        </h1>
-        <h2>
-          <TypeWriterEffect :text="`A Software Engineer building tomorrow’s solutions - simplifying the complex.`"></TypeWriterEffect>
-        </h2>
-        <br>
-        <br>
-        <h2>
-          <a href="https://github.com/BallenAlain" target="_blank"
-        ><img
-          class="socials"
-          src="@/assets/github.png"
-          width="30"
-          height="30"
-      /></a>&nbsp; &nbsp; &nbsp; &nbsp;
-      <a href="https://www.linkedin.com/in/alain-ballen/" target="_blank"
-        ><img
-          class="socials"
-          src="@/assets/linkedin.png"
-          width="30"
-          height="30"
-      /></a>
-        </h2>
+        <div class="text-container">
+          <h1 class="hero">Hi there! <span class="name">I'm Alain</span></h1>
+          <h2>
+            <TypeWriterEffect
+              :text="`A Software Engineer building tomorrow’s solutions - simplifying the complex.`"
+            ></TypeWriterEffect>
+          </h2>
+          <br />
+          <br />
+          <h2>
+            <a href="https://github.com/BallenAlain" target="_blank"
+              ><img class="socials" src="@/assets/github.png" width="30" height="30" /></a
+            >&nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="https://www.linkedin.com/in/alain-ballen/" target="_blank"
+              ><img class="socials" src="@/assets/linkedin.png" width="30" height="30"
+            /></a>
+          </h2>
+        </div>
+        <HeroImage />
       </div>
-      <HeroImage />
-    </div>
       <a href="#work"><ScrollArrow /></a>
     </div>
     <div class="content-container">
       <section id="work"></section>
-      <ExperienceCard v-for="work in items" 
-        :key="work.company" 
+      <ExperienceCard
+        v-for="work in items"
+        :key="work.company"
         :company="work.company"
         :product="work.product"
         :productDetails="work.productDetails"
@@ -59,7 +52,7 @@ const items = jsonData;
 
 <style>
 .hero-container {
-  text-align:center;
+  text-align: center;
   align-items: center;
   min-height: 100vh;
   padding-top: 5%;
@@ -69,9 +62,9 @@ const items = jsonData;
   display: flex;
   max-width: 100%;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   gap: 5%;
-  padding: 0% 5% 0% 10%; 
+  padding: 0% 5% 0% 10%;
 }
 
 .text-container {
@@ -86,35 +79,34 @@ const items = jsonData;
 .hero {
   line-height: 1.2;
   min-width: 10em;
-  color:var(--text-dark);
-  font-size: clamp(2rem, 5vw, 3.5rem); 
+  color: var(--text-dark);
+  font-size: clamp(2rem, 5vw, 3.5rem);
   margin: 0 0 1rem 0;
 }
 
 h2 {
-  font-size: clamp(1rem, 2.5vw, 1.5rem); 
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   margin: 0;
-  min-height: 4em; 
+  min-height: 4em;
 }
 
 @media (max-width: 1240px) {
   .text-image {
     gap: 3%;
-    padding: 0% 5%; 
+    padding: 0% 5%;
   }
 
   .hero {
     min-width: 5em;
   }
-
 }
 
 @media (max-width: 768px) {
   .text-image {
-    flex-direction: column; 
+    flex-direction: column;
     text-align: center;
     justify-content: center;
-    gap: 2rem; 
+    gap: 2rem;
     padding: 2rem;
   }
 
@@ -128,7 +120,6 @@ h2 {
     text-align: center;
   }
 
-
   h2 {
     min-height: auto;
   }
@@ -136,7 +127,7 @@ h2 {
 
 .content-container {
   width: 100%;
-  min-height:100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;

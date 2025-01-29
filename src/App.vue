@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import NavBar from './components/NavBar.vue'
-import CopyrightFooter from './components/CopyrightFooter.vue';
+import CopyrightFooter from './components/CopyrightFooter.vue'
 </script>
 
 <template>
@@ -10,8 +10,8 @@ import CopyrightFooter from './components/CopyrightFooter.vue';
   </header>
   <main>
     <div class="content-container">
-    <RouterView v-motion-fade duration="300"/>
-  </div>
+      <RouterView v-motion-fade duration="300" />
+    </div>
   </main>
   <CopyrightFooter />
 </template>
@@ -27,7 +27,7 @@ header {
 }
 
 .content-container {
-  padding-top: 5rem; 
+  padding-top: 5rem;
   padding-bottom: 5rem;
   width: 100%;
   background-color: white;

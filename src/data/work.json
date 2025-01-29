@@ -1,94 +1,94 @@
 [
-    {
-      "company": "Intelligent Innovations Lab",
-      "product": "Healthlk",
-      "productDetails": "Connecting patients with their healthcare providers and organizing their health information in one place. Provides users with a robust dashboard for seamless communication between patients and healthcare professionals.",
-      "imagePath": "src/assets/healthlk.png",
-      "skills": [
-        {
-          "id": 1,
-          "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
-          "delay": 1500
-        },
-        {
-          "id": 2,
-          "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
-          "delay": 2000
-        },
-        {
-          "id": 3,
-          "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
-          "delay": 2500
-        },
-        {
-          "id": 4,
-          "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
-          "delay": 3000
-        }
-      ],
-      "path": "/intelligentinnovationslab"
-    },
-    {
-      "company": "rout3",
-      "product": "LLM Proxy, Dashboard",
-      "productDetails": "Streamlining access to a diverse range of Large Language Models (LLMs) and fostering innovation in AI-driven applications. With a feature-rich dashboard offering LLM usage analytics and API key management.",
-      "imagePath": "src/assets/kitten-dance.gif",
-      "skills": [
-        {
-          "id": 1,
-          "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-          "delay": 1500
-        },
-        {
-          "id": 2,
-          "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg",
-          "delay": 2000
-        },
-        {
-          "id": 3,
-          "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg",
-          "delay": 2500
-        },
-        {
-          "id": 4,
-          "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg",
-          "delay": 3000
-        }
-      ],
-      "path": "/rout3"
-    },
-    {
-      "company": "Nuula",
-      "product": "Term Loans, Term Life Insurance",
-      "productDetails": "Numerous financial services is provided all within Nuula. This includes Term Life coverage from RBC Insurance with terms of 10 or 20 years offered to small businesses, personalized loan offers to self employed individuals from a network of premium lenders.",
-      "imagePath": "src/assets/kitten-dance.gif",
-      "skills": [
-        {
-          "id": 1,
-          "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
-          "delay": 1500
-        },
-        {
-          "id": 2,
-          "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg",
-          "delay": 2000
-        },
-        {
-          "id": 3,
-          "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
-          "delay": 2500
-        },
-        {
-          "id": 4,
-          "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-          "delay": 3000
-        },
-        {
-          "id": 5,
-          "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg",
-          "delay": 3500
-        }
-      ],
-      "path": "/nuula"
-    }
-  ]
+  {
+    "company": "Intelligent Innovations Lab",
+    "product": "Healthlk",
+    "productDetails": "Connecting patients with their healthcare providers and organizing their health information in one place. Provides users with a robust dashboard for seamless communication between patients and healthcare professionals.",
+    "imagePath": "src/assets/healthlk.png",
+    "skills": [
+      {
+        "id": 1,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
+        "delay": 1500
+      },
+      {
+        "id": 2,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+        "delay": 2000
+      },
+      {
+        "id": 3,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+        "delay": 2500
+      },
+      {
+        "id": 4,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
+        "delay": 3000
+      }
+    ],
+    "path": "/intelligentinnovationslab"
+  },
+  {
+    "company": "rout3",
+    "product": "LLM Proxy, Dashboard",
+    "productDetails": "Streamlining access to a diverse range of Large Language Models (LLMs) and fostering innovation in AI-driven applications. With a feature-rich dashboard offering LLM usage analytics and API key management.",
+    "imagePath": "src/assets/kitten-dance.gif",
+    "skills": [
+      {
+        "id": 1,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+        "delay": 1500
+      },
+      {
+        "id": 2,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg",
+        "delay": 2000
+      },
+      {
+        "id": 3,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg",
+        "delay": 2500
+      },
+      {
+        "id": 4,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg",
+        "delay": 3000
+      }
+    ],
+    "path": "/rout3"
+  },
+  {
+    "company": "Nuula",
+    "product": "Term Loans, Term Life Insurance",
+    "productDetails": "Numerous financial services is provided all within Nuula. This includes Term Life coverage from RBC Insurance with terms of 10 or 20 years offered to small businesses, personalized loan offers to self employed individuals from a network of premium lenders.",
+    "imagePath": "src/assets/kitten-dance.gif",
+    "skills": [
+      {
+        "id": 1,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+        "delay": 1500
+      },
+      {
+        "id": 2,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg",
+        "delay": 2000
+      },
+      {
+        "id": 3,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+        "delay": 2500
+      },
+      {
+        "id": 4,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+        "delay": 3000
+      },
+      {
+        "id": 5,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg",
+        "delay": 3500
+      }
+    ],
+    "path": "/nuula"
+  }
+]
