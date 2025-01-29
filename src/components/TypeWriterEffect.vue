@@ -60,7 +60,7 @@
   <style scoped>
   .typewriter {
     display: inline-block;
-    color: var(--alainblue);
+    color: var(--text-dark-soft);
     min-width: 22vw;
     max-width: 22vw;
     font-size: 1.2em;

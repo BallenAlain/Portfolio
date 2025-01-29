@@ -17,7 +17,7 @@ const items = jsonData;
           Hi there! <span class="name">I'm Alain</span>
         </h1>
         <h2>
-          <TypeWriterEffect :text="`A Software Engineer building tomorrow’s solutions.`"></TypeWriterEffect>
+          <TypeWriterEffect :text="`A Software Engineer building tomorrow’s solutions - simplifying the complex.`"></TypeWriterEffect>
         </h2>
         <br>
         <br>
@@ -82,6 +82,7 @@ const items = jsonData;
 
 .hero {
   line-height: 1.2;
+  min-width: 10em;
   color:var(--text-dark);
   font-size: clamp(2rem, 5vw, 3.5rem); /* Responsive font size */
   margin: 0 0 1rem 0; /* Add margin below h1 to prevent h2 from pushing it up */
@@ -99,6 +100,10 @@ h2 {
   .text-image {
     gap: 3%; /* Reduce gap for medium screens */
     padding: 5% 5%; /* Reduce padding for medium screens */
+  }
+
+  .hero {
+    min-width: 5em;
   }
 
 }
@@ -121,6 +126,7 @@ h2 {
   .text-container {
     text-align: center; /* Center text on smaller screens */
   }
+
 
   h2 {
     min-height: auto; /* Allow h2 to shrink on smaller screens */
