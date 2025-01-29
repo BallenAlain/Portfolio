@@ -49,7 +49,9 @@ const items = jsonData;
         :key="work.company" 
         :company="work.company"
         :product="work.product"
-        :imagePath="work.imagePath"/>
+        :imagePath="work.imagePath"
+        :skillsIcon="work.skills"
+      />
     </div>
   </main>
 </template>
@@ -135,7 +137,6 @@ h2 {
 
 .content-container {
   width: 100%;
-  padding-top:13rem;
   min-height:100vh;
   display: flex;
   flex-direction: column;
