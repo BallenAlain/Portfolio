@@ -13,6 +13,9 @@
 
 
             <div class="nav-links">
+                <router-link to="/chat" class="nav-link">
+                    Chat
+                </router-link>
                 <router-link to="/about" class="nav-link">
                     About
                 </router-link>

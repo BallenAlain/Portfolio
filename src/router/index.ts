@@ -15,19 +15,24 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue'),
     },
     {
+      path: '/chat',
+      name: 'chat',
+      component: () => import('../views/ChatView.vue'),
+    },
+    {
       path: '/rout3',
       name: 'rout3',
-      component: () => import('../views/Rout3View.vue'),
+      component: () => import('../views/Companies/Rout3View.vue'),
     },
     {
       path: '/intelligentinnovationslab',
       name: 'intelligentinnovationslab',
-      component: () => import('../views/IntelligentInnovationsView.vue'),
+      component: () => import('../views/Companies/IntelligentInnovationsView.vue'),
     },
     {
       path: '/nuula',
       name: 'nuula',
-      component: () => import('../views/NuulaView.vue'),
+      component: () => import('../views/Companies/NuulaView.vue'),
     },
   ],
 })
