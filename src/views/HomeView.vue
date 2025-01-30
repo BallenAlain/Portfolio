@@ -55,7 +55,6 @@ const items = jsonData
   text-align: center;
   align-items: center;
   min-height: 100vh;
-  padding-left:5em;
   padding-top: 5%;
 }
 

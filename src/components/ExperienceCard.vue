@@ -64,24 +64,18 @@ export default defineComponent({
       <p class="details">{{ productDetails }}</p>
       <br />
       <span v-for="skill in skillsIcon" :key="skill.id">
-        <img
-          :src="skill.link"
-          height="30"
-          width="30"
-          v-motion-slide-visible-once-left
-          :duration="500"
-          :delay="skill.delay"
-        />
+        <img :src="skill.link" height="30" width="30" v-motion-slide-visible-once-left :duration="500"
+          :delay="skill.delay" />
         &nbsp;
       </span>
       <br />
       <br />
-      <span class="learn-more"
-        >
-        <span class="translate-link"><router-link :to="path" class="link"> Learn more <v-icon name="hi-external-link" /></router-link>
+      <span class="learn-more">
+        <span class="translate-link"><router-link :to="path" class="link"> Learn more <v-icon
+              name="hi-external-link" /></router-link>
         </span>
-        </span>
-        
+      </span>
+
     </div>
     <div class="image-container" v-motion-slide-visible-left :duration="500" :delay="200">
       <img class="image" :src="imagePath" />
@@ -95,9 +89,13 @@ export default defineComponent({
   white-space: nowrap;
 }
 
-.link {
-  text-decoration: none;
-  color: white;
+.details {
+  color: var(--text-dark-soft);
+}
+
+.company {
+  color: var(--alainblue);
+  white-space: nowrap;
 }
 
 .card {
@@ -111,15 +109,6 @@ export default defineComponent({
   opacity: 0;
   transform: translate(0, 10vh);
   transition: all 1s;
-}
-
-.details {
-  color: var(--text-dark-soft);
-}
-
-.company {
-  color: var(--alainblue);
-  white-space: nowrap;
 }
 
 .card.visible {
@@ -154,45 +143,26 @@ export default defineComponent({
   margin-bottom: 1.5rem;
 }
 
-.image-container {
-  max-width: 100%;
-  height: auto;
-  padding: 1rem;
-  cursor: pointer;
-}
-
-.image{
-  transition: transform 0.3s ease;
-}
-
-.image:hover{
-  transform: scale(1.02); 
-}
-
 .learn-more {
   display: inline-block;
-  font-size: clamp(0.6rem, 2vw, 1.3rem);
-  color: var(--text-dark);
   text-decoration: none;
+}
+
+.link {
+  color: var(--vt-c-black-soft);
+  position: relative;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  padding-bottom: 3px;
+  font-size: clamp(0.6rem, 2vw, 1.3rem);
   background-image: linear-gradient(to right, var(--text-dark-soft) 0%, var(--text-dark-soft) 100%);
   background-size: 0% 2px;
   background-position: left bottom;
   background-repeat: no-repeat;
   transition: background-size 0.3s ease-in-out, padding-left 0.5s ease;
-  
 }
 
-
-.link {
-  color: var( --vt-c-black-soft);
-  position: relative;
-  text-decoration: none;
-  transition: transform 0.3s ease;
-  
-}
-
-
-.learn-more:hover {
+.link:hover {
   background-size: 100% 2px;
   padding-left: 10px;
 }
@@ -204,12 +174,24 @@ export default defineComponent({
   margin: 1rem 0;
 }
 
+.image-container {
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+  cursor: pointer;
+}
+
 .image {
   min-width: 600px;
-  max-height:400px;
+  max-height: 400px;
   width: 100%;
   height: auto;
   object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.02);
 }
 
 @media (max-width: 1250px) {
@@ -220,22 +202,25 @@ export default defineComponent({
     padding-bottom: 15rem;
     flex-wrap: nowrap;
   }
+
   .card-content {
     padding: 1rem;
   }
+
   .image {
     flex: 1 1 45%;
     min-width: 350px;
     min-height: 300px;
   }
+
   .learn-more {
-    padding: 0.8rem 1.2rem;
     font-size: 1rem;
   }
+
   .company {
-  color: var(--alainblue);
-  white-space: wrap;
-}
+    color: var(--alainblue);
+    white-space: wrap;
+  }
 }
 
 @media (max-width: 825px) {
@@ -258,10 +243,11 @@ export default defineComponent({
   .skills-container {
     justify-content: center;
   }
+
   .image {
-  min-height:200px;
-  object-fit: contain;
-}
+    min-height: 200px;
+    object-fit: contain;
+  }
 }
 
 @media (max-width: 480px) {
@@ -281,15 +267,15 @@ export default defineComponent({
     padding: 0.6rem 1.2rem;
     font-size: 0.9rem;
   }
+
   .image {
-    max-width:200px;
+    max-width: 200px;
   }
 }
 
-  @media (min-height: 960px){
-    .card:last-child{
-      padding-bottom: 30vh;
-    }
+@media (min-height: 960px) {
+  .card:last-child {
+    padding-bottom: 30vh;
   }
-
+}
 </style>
