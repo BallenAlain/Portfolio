@@ -76,9 +76,12 @@ export default defineComponent({
       </span>
       <br />
       <br />
-      <a href="" class="learn-more"
-        ><router-link :to="path" class="link"> Learn more </router-link></a
-      >
+      <span class="learn-more"
+        >
+        <span class="translate-link"><router-link :to="path" class="link"> Learn more <v-icon name="hi-external-link" /></router-link>
+        </span>
+        </span>
+        
     </div>
     <div class="image-container" v-motion-slide-visible-left :duration="500" :delay="200">
       <img class="image" :src="imagePath" />
@@ -89,6 +92,7 @@ export default defineComponent({
 <style scoped>
 .product {
   font-size: 120em;
+  white-space: nowrap;
 }
 
 .link {
@@ -157,17 +161,40 @@ export default defineComponent({
   cursor: pointer;
 }
 
-.learn-more {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  background-color: var(--alainblue);
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+.image{
+  transition: transform 0.3s ease;
 }
 
+.image:hover{
+  transform: scale(1.02); 
+}
+
+.learn-more {
+  display: inline-block;
+  font-size: clamp(0.6rem, 2vw, 1.3rem);
+  color: var(--text-dark);
+  text-decoration: none;
+  background-image: linear-gradient(to right, var(--text-dark-soft) 0%, var(--text-dark-soft) 100%);
+  background-size: 0% 2px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease-in-out, padding-left 0.5s ease;
+  
+}
+
+
+.link {
+  color: var( --vt-c-black-soft);
+  position: relative;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  
+}
+
+
 .learn-more:hover {
-  background-color: #2a5eb3;
+  background-size: 100% 2px;
+  padding-left: 10px;
 }
 
 .skills-container {
@@ -258,4 +285,11 @@ export default defineComponent({
     max-width:200px;
   }
 }
+
+  @media (min-height: 960px){
+    .card:last-child{
+      padding-bottom: 30vh;
+    }
+  }
+
 </style>
