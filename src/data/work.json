@@ -30,7 +30,7 @@
   },
   {
     "company": "rout3",
-    "product": "LLM Proxy, Dashboard",
+    "product": "LLM Proxy | Dashboard",
     "productDetails": "Streamlining access to a diverse range of Large Language Models (LLMs) and fostering innovation in AI-driven applications. With a feature-rich dashboard offering LLM usage analytics and API key management.",
     "imagePath": "src/assets/kitten-dance.gif",
     "skills": [
@@ -59,7 +59,7 @@
   },
   {
     "company": "Nuula",
-    "product": "Term Loans, Term Life Insurance",
+    "product": "Term Loans | Term Life Insurance",
     "productDetails": "Numerous financial services is provided all within Nuula. This includes Term Life coverage from RBC Insurance with terms of 10 or 20 years offered to small businesses, personalized loan offers to self employed individuals from a network of premium lenders.",
     "imagePath": "src/assets/nuula.png",
     "skills": [
