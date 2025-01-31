@@ -1,15 +1,17 @@
 <template>
   <div class="about">
-    <h1>intelligent innovations lab</h1>
+    <h1>Intelligent Innovations Lab</h1>
+    <br />
+    <h2><i>Under Construction...</i></h2>
   </div>
 </template>
 
-<style>
-@media (min-width: 1024px) {
+<style scoped>
   .about {
-    min-height: 100vh;
+    max-height: 100vh;
     display: flex;
+    flex-direction: column;
+    padding-top: 20%;
     align-items: center;
   }
-}
 </style>

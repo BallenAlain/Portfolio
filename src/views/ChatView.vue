@@ -1,13 +1,17 @@
 <template>
   <div class="about">
-    <h1>Jim, the AI chatbot assistant<br />Coming soon...</h1>
+    <h1>Jim, the AI chatbot assistant</h1>
+    <br />
+    <h2><i>Coming soon...</i></h2>
   </div>
 </template>
 
-<style>
+<style scoped>
   .about {
-    min-height: 100vh;
+    max-height: 100vh;
     display: flex;
+    flex-direction: column;
+    padding-top: 20%;
     align-items: center;
   }
 </style>
