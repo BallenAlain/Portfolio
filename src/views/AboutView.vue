@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import jsonData from '@/data/about-links.json'
 import AboutLink from '@/components/about/AboutLink.vue';
+import PhotoCollage from '@/components/about/PhotoCollage.vue';
 
 const items = jsonData
 </script>
@@ -28,37 +29,42 @@ const items = jsonData
         <br>
         <p class="connect">Lets connect!</p>
         <div class="about-link-container">
-          <AboutLink v-for="item in items"
-          :key="item.link"
-          :text="item.text" 
-          :name="item.name" 
-          :link="item.link" />
+          <AboutLink v-for="item in items" :key="item.link" :text="item.text" :name="item.name" :link="item.link" />
         </div>
-        <br><br><hr><br>
-        <p>Beyond the lines of code, <span class="name">catch me: </span>
-        <ul>
-          <li>In the gym 🏋️</li>
-          <li>Going out for a paddle on an outrigger canoe 🛶</li>
-          <li>Training hard on the water for dragon boat racing 🐲</li>
-          <li>Trying out new food (brand ambassador @torontomunching) 🍣</li>
-          <li>Exploring new places! ✈️</li>
-        </ul>
-        </p>
+
       </div>
     </div>
 
     <img class="image" src="../assets/myself.png" width="301" height="460">
 
   </div>
+  <div class="personal">
+          <div class="photo-collage">
+            <PhotoCollage />
+          </div>
+          <div>
+            <div class="personal-text">
+              <h2>Beyond the lines of code, <span class="name">catch me: </span></h2>
+            <ul>
+              <li><v-icon name="bi-check-all" scale="1.3" fill="#4b7ced"/>&nbsp;In the gym 🏋️</li><br>
+              <li><v-icon name="bi-check-all" scale="1.3" fill="#4b7ced"/>Going out for a paddle on an outrigger canoe 🛶</li><br>
+              <li><v-icon name="bi-check-all" scale="1.3" fill="#4b7ced"/>Training hard on the water for dragon boat racing 🐲</li><br>
+              <li><v-icon name="bi-check-all" scale="1.3" fill="#4b7ced"/>Trying out new food (brand ambassador @torontomunching) 🍣</li><br>
+              <li><v-icon name="bi-check-all" scale="1.3" fill="#4b7ced"/>Exploring new places! ✈️</li><br>
+            </ul>
+            </div>
+          </div>
+        </div>
 </template>
 
 <style scoped>
 .about {
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
-  padding: 5em 0 0 2em;
+  padding: 5em 10em 0 10em;
   align-items: flex-start;
-  gap: 20vw;
+  gap: 10vw;
+  padding-bottom: 10em;
 }
 
 .about h1 {
@@ -79,9 +85,51 @@ const items = jsonData
   text-decoration: none;
 }
 
-.about-link-container{
+.about-link-container {
   display: flex;
   flex-wrap: wrap;
+}
+
+.personal {
+  display: flex;
+  align-items: flex-start;
+  gap:20%;
+}
+
+.image {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.personal-text {
+  padding-top: 3em;
+}
+
+.personal-text h2 {
+  white-space: nowrap;
+}
+
+.personal-text ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (max-width: 1400px) {
+  .about {
+    padding: 5em 0 0 0;
+  }
+  .personal {
+    padding-top:5em;
+  }
+  .personal-text h2 {
+  white-space: wrap;
+}
+.personal {
+  display: flex;
+  align-items: flex-start;
+  gap:8%;
+}
 }
 
 @media (max-width: 720px) {
@@ -90,16 +138,19 @@ const items = jsonData
     display: flex;
     flex-direction: column;
   }
-  .about-link-container{
-  display: inline-block;
-  flex-wrap: wrap;
-  gap:10vw;
-}
-.image{
-  order:-1;
-  
-}
-}
 
+  .about-link-container {
+    display: inline-block;
+    flex-wrap: wrap;
+    gap: 10vw;
+  }
 
+  .image {
+    order: -1;
+  }
+  .personal {
+    display:flex;
+    flex-direction: column;
+  }
+}
 </style>
