@@ -69,6 +69,7 @@ const items = jsonData
 .text-container {
   flex: 1;
   text-align: left;
+  padding-left: 5em;
 }
 
 .name {

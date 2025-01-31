@@ -109,6 +109,7 @@ export default defineComponent({
   opacity: 0;
   transform: translate(0, 10vh);
   transition: all 1s;
+  max-width:95vw
 }
 
 .card.visible {

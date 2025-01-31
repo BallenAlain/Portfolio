@@ -2,7 +2,7 @@
   <div class="about">
     <h1>rout3</h1>
     <br />
-    <h2><i>WIP...</i></h2>
+    <h2><i>Under Construction...</i></h2>
   </div>
 </template>
 
