@@ -1,7 +1,7 @@
 [
   {
     "company": "Intelligent Innovations Lab",
-    "product": "Healthlk",
+    "product": "Software Development",
     "productDetails": "Connecting patients with their healthcare providers and organizing their health information in one place. Provides users with a robust dashboard for seamless communication between patients and healthcare professionals.",
     "imagePath": "src/assets/healthlk.png",
     "skills": [
@@ -30,7 +30,7 @@
   },
   {
     "company": "rout3",
-    "product": "LLM Proxy | Dashboard",
+    "product": "Software Development | UI/UX Design",
     "productDetails": "Streamlining access to a diverse range of Large Language Models (LLMs) and fostering innovation in AI-driven applications. With a feature-rich dashboard offering LLM usage analytics and API key management.",
     "imagePath": "src/assets/kitten-dance.gif",
     "skills": [
@@ -59,7 +59,7 @@
   },
   {
     "company": "Nuula",
-    "product": "Term Loans | Term Life Insurance",
+    "product": "Software Development | Quality Assurance",
     "productDetails": "Numerous financial services is provided all within Nuula. This includes Term Life coverage from RBC Insurance with terms of 10 or 20 years offered to small businesses, personalized loan offers to self employed individuals from a network of premium lenders.",
     "imagePath": "src/assets/nuula.png",
     "skills": [
@@ -70,23 +70,28 @@
       },
       {
         "id": 2,
-        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg",
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg",
         "delay": 2000
       },
       {
         "id": 3,
-        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg",
         "delay": 2500
       },
       {
         "id": 4,
-        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
         "delay": 3000
       },
       {
         "id": 5,
-        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg",
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
         "delay": 3500
+      },
+      {
+        "id": 6,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg",
+        "delay": 4000
       }
     ],
     "path": "/nuula"

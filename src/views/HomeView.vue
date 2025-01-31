@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import TypeWriterEffect from '@/components/TypeWriterEffect.vue'
-import HeroImage from '@/components/HeroImage.vue'
-import ScrollArrow from '@/components/ScrollArrow.vue'
-import ExperienceCard from '@/components/ExperienceCard.vue'
+import TypeWriterEffect from '@/components/home/TypeWriterEffect.vue'
+import HeroImage from '@/components/home/HeroImage.vue'
+import ScrollArrow from '@/components/home/ScrollArrow.vue'
+import ExperienceCard from '@/components/home/ExperienceCard.vue'
 import jsonData from '@/data/work.json'
 
 const items = jsonData
