@@ -1,6 +1,11 @@
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
   --alainblue: #4b7ced;
+  --alainblue-dark-10: #3a63c2;
+  --alainblue-dark-20: #2a4a9a;
+  --alainblue-dark-30: #1a3072;
+  --alainblue-light-10: #6693f0;
+  --alainblue-light-30: #99bff6;
   --deep-space: ##021631;
   --text-light:  ;
   --text-dark: #2c3e50;

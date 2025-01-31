@@ -1,0 +1,48 @@
+@import './base.css';
+
+#app {
+  margin: 0 auto;
+  padding: 0rem 1rem 0rem 1rem;
+  font-weight: normal;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+
+/* Track styling */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  width: 15px;
+  border: 1px solid #dcdcdc;
+}
+
+/* Handle styling */
+::-webkit-scrollbar-thumb {
+  background: var(--alainblue);
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+  background-clip: content-box;
+}
+
+/* Handle hover state */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--alainblue-dark-20);
+  border-color: #f1f1f1;
+}
+
+/* @media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+} */

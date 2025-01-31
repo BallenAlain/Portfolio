@@ -63,6 +63,7 @@ export default defineComponent({
       <h1 class="company">{{ company }}</h1>
       <p class="details">{{ productDetails }}</p>
       <br />
+      <!-- see https://devicon.dev/ for icons -->
       <span v-for="skill in skillsIcon" :key="skill.id">
         <img :src="skill.link" height="30" width="30" v-motion-slide-visible-once-left :duration="500"
           :delay="skill.delay" />
@@ -86,7 +87,6 @@ export default defineComponent({
 <style scoped>
 .product {
   font-size: 120em;
-  white-space: nowrap;
 }
 
 .details {
@@ -134,7 +134,7 @@ export default defineComponent({
 }
 
 .card-content h3 {
-  font-size: clamp(0.7rem, 3vw, 2rem);
+  font-size: clamp(0.4rem, 3vw, 1.6rem);
 }
 
 .card-content p {
