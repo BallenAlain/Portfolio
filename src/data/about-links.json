@@ -1,0 +1,22 @@
+[
+    {
+        "text": "Check out my ",
+        "name": "GitHub",
+        "link": "https://github.com/BallenAlain"
+    },
+    {
+        "text": "Follow me on ",
+        "name": "LinkedIn",
+        "link": "https://www.linkedin.com/in/alain-ballen/"
+    },
+    {
+        "text": "Send me an ",
+        "name": "email",
+        "link": "mailto:alainballen@gmail.com"
+    },
+    {
+        "text": "Take a look at my ",
+        "name": "resume",
+        "link": "http://localhost:5173/src/assets/resume.pdf"
+    }
+]
