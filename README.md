@@ -6,3 +6,4 @@ This template should help get you started developing with Vue 3 in Vite.
 
 - [ ] AI chat bot assistant
 - [ ] GitHub actions for linting
+- [ ] Optimize loading large images
