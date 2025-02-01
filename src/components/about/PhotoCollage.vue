@@ -143,7 +143,7 @@ const closeModal = () => {
     }
     
     .photo img {
-        width: 90%;
+        width: 80%;
         height: auto;
         max-height: 50vh;
         margin: 0 auto;
