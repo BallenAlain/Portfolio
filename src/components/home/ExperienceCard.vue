@@ -270,7 +270,7 @@ export default defineComponent({
   }
 
   .image {
-    max-width: 200px;
+    min-width:200px;
   }
 }
 

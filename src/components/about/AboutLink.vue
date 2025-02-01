@@ -42,7 +42,7 @@ export default defineComponent({
     position: relative;
     transition: transform 0.3s ease;
     padding-bottom: 3px;
-    font-size: clamp(0.2rem, 2vw, 1rem);
+    font-size: clamp(0.9rem, 2vw, 1rem);
     background-image: linear-gradient(to right, var(--text-dark-soft) 0%, var(--text-dark-soft) 100%);
     background-size: 0% 2px;
     background-position: left bottom;

@@ -128,6 +128,9 @@ h2 {
   h2 {
     min-height: auto;
   }
+  .text-container {
+    padding-left:0;
+  }
 }
 
 .content-container {
