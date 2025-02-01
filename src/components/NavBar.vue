@@ -3,7 +3,7 @@
     <div class="nav-content">
       <router-link to="/" class="name">
         <span class="name-box">
-          <img src="../assets/ab.png" alt="Logo" width="40" height="40" />
+          <img src="/assets/ab.png" alt="Logo" width="40" height="40" />
         </span>
         <span class="name">ALAIN BALLEN</span>
       </router-link>

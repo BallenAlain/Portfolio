@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 const photos = [
-    "src/assets/img1.png",
-    "src/assets/img2.jpg",
-    "src/assets/img3.jpg"
+    "/assets/img1.png",
+    "/assets/img2.jpg",
+    "/assets/img3.jpg"
 ]
 
 const selectedPhoto = ref<string | null>(null);

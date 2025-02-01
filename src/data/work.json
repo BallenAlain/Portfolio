@@ -3,7 +3,7 @@
     "company": "Intelligent Innovations Lab",
     "product": "Software Development",
     "productDetails": "Connecting patients with their healthcare providers and organizing their health information in one place. Provides users with a robust dashboard for seamless communication between patients and healthcare professionals.",
-    "imagePath": "src/assets/healthlk.png",
+    "imagePath": "/assets/healthlk.png",
     "skills": [
       {
         "id": 1,
@@ -32,7 +32,7 @@
     "company": "rout3",
     "product": "Software Development | UI/UX Design",
     "productDetails": "Streamlining access to a diverse range of Large Language Models (LLMs) and fostering innovation in AI-driven applications. With a feature-rich dashboard offering LLM usage analytics and API key management.",
-    "imagePath": "src/assets/kitten-dance.gif",
+    "imagePath": "/assets/kitten-dance.gif",
     "skills": [
       {
         "id": 1,
@@ -61,7 +61,7 @@
     "company": "Nuula",
     "product": "Software Development | Quality Assurance",
     "productDetails": "Numerous financial services is provided all within Nuula. This includes Term Life coverage from RBC Insurance with terms of 10 or 20 years offered to small businesses, personalized loan offers to self employed individuals from a network of premium lenders.",
-    "imagePath": "src/assets/nuula.png",
+    "imagePath": "/assets/nuula.png",
     "skills": [
       {
         "id": 1,

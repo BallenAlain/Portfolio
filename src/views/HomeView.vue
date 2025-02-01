@@ -23,10 +23,10 @@ const items = jsonData
           <br />
           <h2>
             <a href="https://github.com/BallenAlain" target="_blank"
-              ><img class="socials" src="@/assets/github.png" width="30" height="30" /></a
+              ><img class="socials" src="/assets/github.png" width="30" height="30" /></a
             >&nbsp; &nbsp; &nbsp; &nbsp;
             <a href="https://www.linkedin.com/in/alain-ballen/" target="_blank"
-              ><img class="socials" src="@/assets/linkedin.png" width="30" height="30"
+              ><img class="socials" src="/assets/linkedin.png" width="30" height="30"
             /></a>
           </h2>
         </div>
