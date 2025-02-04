@@ -91,6 +91,7 @@ const items = jsonData
 }
 
 .personal {
+  padding-left: 10em;
   display: flex;
   align-items: flex-start;
   gap:20%;
