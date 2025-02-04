@@ -1,0 +1,35 @@
+[
+    {
+        "role": "Software Developer",
+        "company": "Intelligent Innovations Lab",
+        "date": "Dec 2024 - Present",
+        "description": "Developed scalable web applications using modern technologies.",
+        "responsibilities": [
+            "Built RESTful APIs with Node.js and Express",
+            "Implemented frontend features using Vue.js",
+            "Optimized database queries for PostgreSQL"
+        ]
+    },
+    {
+        "role": "Founding Software Engineer",
+        "company": "rout3",
+        "date": "May 2024 - Sep 2024",
+        "description": "Worked on user-facing features for a SaaS platform.",
+        "responsibilities": [
+            "Developed reusable React components",
+            "Collaborated with designers to implement UI/UX improvements",
+            "Integrated with backend APIs for data fetching"
+        ]
+    },
+    {
+        "role": "Software Engineer Intern",
+        "company": "Nuula",
+        "date": "Sep 2021 - Sep 2022",
+        "description": "Assisted in building prototypes for new product ideas.",
+        "responsibilities": [
+            "Wrote Python scripts for data analysis",
+            "Supported the team in debugging and testing",
+            "Documented technical processes and workflows"
+        ]
+    }
+]
