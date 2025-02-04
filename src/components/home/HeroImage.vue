@@ -13,7 +13,7 @@ const handleMouseMove = (event: MouseEvent) => {
   const centerY = rect.top + rect.height / 2
   const deltaX = clientX - centerX
   const deltaY = clientY - centerY
-  const moveDistance = 30
+  const moveDistance = 20
   const translateX = (deltaX / rect.width) * moveDistance
   const translateY = (deltaY / rect.height) * moveDistance
 
