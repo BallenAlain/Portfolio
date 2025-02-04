@@ -2,10 +2,9 @@
 import TypeWriterEffect from '@/components/home/TypeWriterEffect.vue'
 import HeroImage from '@/components/home/HeroImage.vue'
 import ScrollArrow from '@/components/home/ScrollArrow.vue'
-import ExperienceCard from '@/components/home/ExperienceCard.vue'
-import jsonData from '@/data/work.json'
-
-const items = jsonData
+import SkillsSection from '@/components/home/SkillsSection.vue'
+import WorkExperience from '@/components/home/WorkExperience.vue'
+import skills from '@/data/skills.json'
 </script>
 
 <template>
@@ -32,21 +31,16 @@ const items = jsonData
         </div>
         <HeroImage />
       </div>
-      <a href="#work"><ScrollArrow /></a>
+      <a href="#details"><ScrollArrow /></a>
     </div>
-    <div class="content-container">
-      <section id="work"></section>
-      <ExperienceCard
-        v-for="work in items"
-        :key="work.company"
-        :company="work.company"
-        :product="work.product"
-        :productDetails="work.productDetails"
-        :imagePath="work.imagePath"
-        :skillsIcon="work.skills"
-        :path="work.path"
-      />
-    </div>
+    <section id="details"></section>
+    <SkillsSection :skills="{
+  languages: skills.languages,
+  fullstack: skills.fullstack,
+  infrastructure: skills.fullstack,
+  tools: skills.tools
+}" />
+<WorkExperience />
   </main>
 </template>
 
@@ -131,15 +125,6 @@ h2 {
   .text-container {
     padding-left:0;
   }
-}
-
-.content-container {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 0;
 }
 
 html {
