@@ -3,33 +3,115 @@
         "role": "Software Developer",
         "company": "Intelligent Innovations Lab",
         "date": "Dec 2024 - Present",
-        "description": "Developed scalable web applications using modern technologies.",
+        "description": "Led and planned the development of a scalable mobile and web application with Flutter support iOS and Android devices. Key features include a secure user authentication flow with Firebase Auth and OAuth providers, a secure document uploading pipeline using Google Cloud Functions with encryptiona and access controls. ",
         "responsibilities": [
             "Built RESTful APIs with Node.js and Express",
             "Implemented frontend features using Vue.js",
             "Optimized database queries for PostgreSQL"
+        ],
+        "Location": "Peterborough, ON",
+        "Link": "intelligentinnovationslab.com",
+        "skills": [
+            {
+                "id": 1,
+                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
+                "delay": 0
+              },
+              {
+                "id": 2,
+                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+                "delay": 500
+              },
+              {
+                "id": 3,
+                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+                "delay": 1000
+              },
+              {
+                "id": 4,
+                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
+                "delay": 1500
+              }
         ]
     },
     {
         "role": "Founding Software Engineer",
         "company": "rout3",
         "date": "May 2024 - Sep 2024",
-        "description": "Worked on user-facing features for a SaaS platform.",
+        "description": "Co-founded a startup with a mission to empower developers by streamlining access to a diverse range of Large Language Models (LLMs) and fostering innovation in AI-driven applications. Spearheaded the creation of our backend infrastructure, utilizing FastAPI to ensure efficient API request handling. Designed and managed our SQLite database architecture, focusing on schema maintenance, query optimization, and seamless data migrations. Led the development of a comprehensive, user-friendly dashboard featuring secure user authentication, API key management, and detailed usage data, all aimed at providing a robust and intuitive experience for our users.",
         "responsibilities": [
             "Developed reusable React components",
             "Collaborated with designers to implement UI/UX improvements",
             "Integrated with backend APIs for data fetching"
+        ],
+        "Location": "Toronto, ON",
+        "Link": "rout3.com",
+        "skills": [
+            {
+                "id": 1,
+                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+                "delay": 0
+              },
+              {
+                "id": 2,
+                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg",
+                "delay": 500
+              },
+              {
+                "id": 3,
+                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg",
+                "delay": 1000
+              },
+              {
+                "id": 4,
+                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg",
+                "delay": 1500
+              }
         ]
     },
     {
         "role": "Software Engineer Intern",
-        "company": "Nuula",
+        "company": "Nuula (Acquired by Nav)",
         "date": "Sep 2021 - Sep 2022",
-        "description": "Assisted in building prototypes for new product ideas.",
+        "description": "Seamlessly integrated Nuula's core features with analytics using GraphQL and Spring Boot, delivering a substantial increase in user app data for the BI Team's insightful analysis of trends and potential risks. Designed the end-to-end architecture of Nuula's Term Life Insurance Tool with Swagger documentation. Created a 95% test coverage suite of core features designing 300+ scenario-based test cases",
         "responsibilities": [
             "Wrote Python scripts for data analysis",
             "Supported the team in debugging and testing",
             "Documented technical processes and workflows"
+        ],
+        "Location": "Toronto, ON",
+        "Link": "nuula.com",
+        "skills": [
+            {
+                "id": 1,
+                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+                "delay": 0
+              },
+              {
+                "id": 2,
+                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg",
+                "delay": 500
+              },
+              {
+                "id": 3,
+                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg",
+                "delay": 1000
+              },
+              {
+                "id": 4,
+                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+                "delay": 1500
+              },
+              {
+                "id": 5,
+                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+                "delay": 2000
+              },
+              {
+                "id": 6,
+                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg",
+                "delay": 2500
+              }
         ]
     }
 ]

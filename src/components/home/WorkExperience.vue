@@ -12,12 +12,26 @@
         </div>
         <div class="tab-content">
           <div>
+            <div class="details">
+              <p class="location">
+                <v-icon name="md-locationon-sharp" fill="#4b7ced" scale="1.2"/>
+                {{ experience.Location }}
+              </p>
+              <p clas="link">
+                <a :href="experience.Link">
+                <v-icon name="hi-external-link" fill="#4b7ced" scale="1.2"/>
+                {{ experience.Link }}
+              </a>
+              </p>
+            </div>
             <p class="description">{{ experience.description }}</p>
-            <ul v-if="experience.responsibilities" class="responsibilities">
-              <li v-for="(responsibility, i) in experience.responsibilities" :key="i">
-                {{ responsibility }}
-              </li>
-            </ul>
+            <p class="skills">
+              <span v-for="skill in experience.skills" :key="skill.id">
+        <img :src="skill.link" height="34" width="30" v-motion-slide-visible-once-left :duration="500"
+          :delay="skill.delay" />
+        &nbsp;
+      </span>
+            </p>
           </div>
         </div>
       </div>
@@ -91,7 +105,7 @@ export default defineComponent({
 .tab {
   background-color: var(--vt-c-white-soft);
   border-radius: 15px;
-  cursor: pointer;
+  cursor: auto;
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -99,6 +113,7 @@ export default defineComponent({
 .tab-header {
   padding: 1.5rem 2rem;
   background-color: var(--alainblue-light-40);
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -129,26 +144,6 @@ export default defineComponent({
   line-height: 1.6;
 }
 
-.responsibilities {
-  padding: 0 2rem 2rem;
-  margin: 0;
-  list-style: none;
-}
-
-.responsibilities li {
-  margin-bottom: 0.8rem;
-  position: relative;
-  padding-left: 1.5rem;
-}
-
-.responsibilities li::before {
-  content: '▹';
-  position: absolute;
-  left: 0;
-  color: var(--alainblue);
-  font-weight: bold;
-}
-
 .left-side {
   font-weight: bold;
 }
@@ -160,6 +155,22 @@ export default defineComponent({
 
 .plus {
   font-weight: bold;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em 5em 0 5em;
+}
+
+.skills {
+  margin: 0 2rem 0.5rem 2rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
