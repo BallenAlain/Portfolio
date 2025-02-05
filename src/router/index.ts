@@ -34,6 +34,11 @@ const router = createRouter({
       name: 'nuula',
       component: () => import('../views/Companies/NuulaView.vue'),
     },
+    {
+      path: '/projects',
+      name: 'nuula',
+      component: () => import('../views/ProjectsView.vue'),
+    },
   ],
 })
 

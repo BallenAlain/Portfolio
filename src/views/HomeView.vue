@@ -46,6 +46,8 @@ import skills from '@/data/skills.json'
 
 <style>
 .hero-container {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   align-items: center;
   min-height: 100vh;
@@ -54,7 +56,7 @@ import skills from '@/data/skills.json'
 
 .text-image {
   display: flex;
-  max-width: 100%;
+  max-width: 75%;
   align-items: center;
   justify-content: center;
  
