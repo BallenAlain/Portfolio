@@ -44,8 +44,8 @@ export default defineComponent({
       <div class="skills-header">
         <h2 class="section-title">Expertise</h2>
       </div>
-  
-        <div class="skills-container">
+        <div class="skills-page">
+          <div class="skills-container">
         <div 
           v-for="(categorySkills, categoryName) in skills" 
           :key="categoryName" 
@@ -62,17 +62,28 @@ export default defineComponent({
             </div>
           </div>
         </div>
-
       </div>
+      <span class="icon">
+        <v-icon name="ai-obp-square" scale="20" fill="#4b7ced" />
+      </span>
+        </div>
+        
       
     </section>
   </template>
   
   <style scoped>
+  .skills-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8em;
+  }
   .skills-section {
     padding-top:6rem;
     padding-bottom: 6rem;
-    max-width: 90%;
+    max-width: 72%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -121,7 +132,6 @@ export default defineComponent({
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     padding-left: 1rem; /* Align with header text */
   }
   
@@ -129,7 +139,6 @@ export default defineComponent({
     width: 100%;
     padding: 1.5rem;
     border-radius: 12px;
-    margin-bottom: 1.5rem;
   }
   
   .category-title {
@@ -138,7 +147,6 @@ export default defineComponent({
     font-size: 1.4rem;
     margin-bottom: 1.5rem;
     color: var(--vt-c-black-soft);
-    padding-bottom: 0.5rem;
     position: relative;
     display: block;
     width: 100%;
