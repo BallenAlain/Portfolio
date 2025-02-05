@@ -1,6 +1,6 @@
 {
     "languages": ["Java", "Python", "TypeScript", "Go", "Dart", "SQL"],
     "fullstack": ["React.js", "Vue.js", "Flutter", "Node.js", "Spring Boot", "FastAPI", "Hibernate", "SQLAlchemy"],
-    "infrastructure": ["Docker", "Firebase", "Google Cloud Functions", "PostgreSQL", "MySQL", "GitHub Actions", "CircleCI"],
+    "infrastructure": ["Docker", "Firebase", "Google Cloud Platform", "PostgreSQL", "MySQL", "GitHub Actions", "CircleCI"],
     "tools": ["Git", "Bash", "Maven", "Gradle", "VS Code", "Jira", "Confluence"]
   }

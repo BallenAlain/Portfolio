@@ -37,7 +37,7 @@ import skills from '@/data/skills.json'
     <SkillsSection :skills="{
   languages: skills.languages,
   fullstack: skills.fullstack,
-  infrastructure: skills.fullstack,
+  infrastructure: skills.infrastructure,
   tools: skills.tools
 }" />
 <WorkExperience />
