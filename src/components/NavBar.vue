@@ -63,7 +63,7 @@
   font-size: 1rem;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link:focus {
   color: var(--alainblue);
 }
 
