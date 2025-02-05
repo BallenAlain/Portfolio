@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>Intelligent Innovations Lab</h1>
+    <h1>Pillminder</h1>
     <br />
     <h2><i>Under Construction...</i></h2>
   </div>

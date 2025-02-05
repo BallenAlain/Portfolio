@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>Nuula</h1>
+    <h1>LLM Proxy</h1>
     <br />
     <h2><i>Under Construction...</i></h2>
   </div>

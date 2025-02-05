@@ -1,5 +1,29 @@
 @import './base.css';
 
+/* h1 {
+  font-family: ;
+} */
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url("https://fonts.cdnfonts.com/css/helvetica-neue-55") format("opentype");
+}
+
+@font-face {
+  font-family: NeueHaas;
+  src: url("/assets/NeueHaasDisplayLight.ttf") format("opentype");
+  letter-spacing: 20px;
+}
+
+h1 {
+  font-family: 'HelveticaNeue', serif;
+}
+
+p {
+  font-family: 'NeueHaas';
+  letter-spacing: 2px;
+}
+
 #app {
   margin: 0 auto;
   padding: 0rem 1rem 0rem 1rem;

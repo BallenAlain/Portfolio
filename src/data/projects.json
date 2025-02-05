@@ -26,12 +26,12 @@
         "delay": 3000
       }
     ],
-    "path": "/intelligentinnovationslab"
+    "path": "/healthlk"
   },
   {
     "company": "LLM Proxy",
     "product": "Fullstack, UI/UX, DevOps",
-    "productDetails": "Streamlining access to a diverse range of Large Language Models (LLMs) and fostering innovation in AI-driven applications. With a feature-rich dashboard offering LLM usage analytics and API key management.",
+    "productDetails": "Streamlining access to a diverse range of Large Language Models (LLMs) and fostering innovation in AI-driven applications. Supports smart prompt routing reducing LLM cost usage and selecting the best LLM for each prompt.",
     "imagePath": "/assets/rout3.png",
     "skills": [
       {
@@ -55,12 +55,12 @@
         "delay": 3000
       }
     ],
-    "path": "/rout3"
+    "path": "/llmproxy"
   },
   {
     "company": "Pillminder",
     "product": "Backend",
-    "productDetails": "Numerous financial services is provided all within Nuula. This includes Term Life coverage from RBC Insurance with terms of 10 or 20 years offered to small businesses, personalized loan offers to self employed individuals from a network of premium lenders.",
+    "productDetails": "Keep track of your prescription medication all within an app. Sends you reminders via text, SMS, or email when to take your medication. Simply take a picture of prescription and the app will parse the necessary data.",
     "imagePath": "/assets/nuula.png",
     "skills": [
       {
@@ -94,6 +94,84 @@
         "delay": 4000
       }
     ],
-    "path": "/nuula"
+    "path": "/pillminder"
+  },
+  {
+    "company": "Venngram",
+    "product": "Backend",
+    "productDetails": "Organize data with venn diagrams supporting customizable colours and sizes. Application allows users to save their diagrams in an applicaiton-specific file format allowing users to save and open their diagrams. Supports exports to other file formats such as JPEG, PNG, and PDF.",
+    "imagePath": "/assets/nuula.png",
+    "skills": [
+      {
+        "id": 1,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+        "delay": 1500
+      },
+      {
+        "id": 2,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg",
+        "delay": 2000
+      },
+      {
+        "id": 3,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg",
+        "delay": 2500
+      },
+      {
+        "id": 4,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+        "delay": 3000
+      },
+      {
+        "id": 5,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+        "delay": 3500
+      },
+      {
+        "id": 6,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg",
+        "delay": 4000
+      }
+    ],
+    "path": "/venngram"
+  },
+  {
+    "company": "Parking System",
+    "product": "Backend",
+    "productDetails": "A system designed to manage parking spaces within a parking lot all within a Java GUI. Offers support for parking management and new parking lot registration with payment support.",
+    "imagePath": "/assets/nuula.png",
+    "skills": [
+      {
+        "id": 1,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+        "delay": 1500
+      },
+      {
+        "id": 2,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg",
+        "delay": 2000
+      },
+      {
+        "id": 3,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg",
+        "delay": 2500
+      },
+      {
+        "id": 4,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+        "delay": 3000
+      },
+      {
+        "id": 5,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+        "delay": 3500
+      },
+      {
+        "id": 6,
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg",
+        "delay": 4000
+      }
+    ],
+    "path": "/parking-system"
   }
 ]
