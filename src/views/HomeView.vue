@@ -15,7 +15,7 @@ import skills from '@/data/skills.json'
           <h1 class="hero">Hi there! <span class="name">I'm Alain</span></h1>
           <h2>
             <TypeWriterEffect
-              :text="`A Software Engineer building tomorrow’s solutions - simplifying the complex.`"
+              :text="`A Software Engineer building tomorrow’s solutions.`"
             ></TypeWriterEffect>
           </h2>
           <br />
@@ -34,13 +34,17 @@ import skills from '@/data/skills.json'
       <a href="#details"><ScrollArrow /></a>
     </div>
     <section id="details"></section>
-    <SkillsSection :skills="{
+    <div class="skills-section-container">
+      <SkillsSection :skills="{
   languages: skills.languages,
   fullstack: skills.fullstack,
   infrastructure: skills.infrastructure,
   tools: skills.tools
-}" />
-<WorkExperience />
+}" v-motion-fade-visible :duration="500" :delay="100"/>
+    </div>
+    <div class="work-section-container">
+      <WorkExperience v-motion-fade-visible :duration="500" :delay="100"/>
+    </div>
   </main>
 </template>
 
@@ -50,7 +54,7 @@ import skills from '@/data/skills.json'
   flex-direction: column;
   text-align: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 90vh;
   padding-top: 5%;
 }
 
@@ -84,6 +88,12 @@ h2 {
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   margin: 0;
   min-height: 4em;
+}
+.skills-section-container {
+  background-color: var(--vt-c-white-mute);
+}
+.work-section-container {
+  padding:15em 0;
 }
 
 @media (max-width: 1240px) {

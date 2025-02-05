@@ -14,22 +14,22 @@
         "skills": [
             {
                 "id": 1,
-                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
+                "link": "Flutter",
                 "delay": 0
               },
               {
                 "id": 2,
-                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+                "link": "Firebase",
                 "delay": 500
               },
               {
                 "id": 3,
-                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+                "link": "Node.js",
                 "delay": 1000
               },
               {
                 "id": 4,
-                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
+                "link": "Google Cloud Platform",
                 "delay": 1500
               }
         ]
@@ -49,22 +49,22 @@
         "skills": [
             {
                 "id": 1,
-                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+                "link": "Python",
                 "delay": 0
               },
               {
                 "id": 2,
-                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg",
+                "link": "FastAPI",
                 "delay": 500
               },
               {
                 "id": 3,
-                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg",
+                "link": "Svelte",
                 "delay": 1000
               },
               {
                 "id": 4,
-                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg",
+                "link": "SQLite",
                 "delay": 1500
               }
         ]
@@ -84,34 +84,50 @@
         "skills": [
             {
                 "id": 1,
-                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+                "link": "Java",
                 "delay": 0
               },
               {
                 "id": 2,
-                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg",
+                "link": "GraphQL",
                 "delay": 500
               },
               {
                 "id": 3,
-                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg",
+                "link": "Spring Boot",
                 "delay": 1000
               },
               {
                 "id": 4,
-                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+                "link": "PostgreSQL",
                 "delay": 1500
               },
               {
                 "id": 5,
-                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+                "link": "React.js",
                 "delay": 2000
               },
               {
                 "id": 6,
-                "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg",
+                "link": "Selenium",
                 "delay": 2500
               }
+        ]
+    },
+    {
+        "role": "STEM Instructor",
+        "company": "Elephant Thoughts",
+        "date": "Jun 2024 - Aug 2024",
+        "description": "Taught Indigenous youth by delivering engaging lessons and adapting teaching methods to provide accessible education to students facing systemic barriers. Collaborated with 30+ instructors across the Cree school board sharing insights and developing solutions to identify and address class challenges",
+        "responsibilities": [
+            "Built RESTful APIs with Node.js and Express",
+            "Implemented frontend features using Vue.js",
+            "Optimized database queries for PostgreSQL"
+        ],
+        "Location": "Chisasibi, QC",
+        "Link": "elephantthoughts.com",
+        "skills": [
+            
         ]
     }
 ]

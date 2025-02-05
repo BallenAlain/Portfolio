@@ -25,13 +25,12 @@
               </p>
             </div>
             <p class="description">{{ experience.description }}</p>
-            <p class="skills">
-              <span v-for="skill in experience.skills" :key="skill.id">
-        <img :src="skill.link" height="34" width="30" v-motion-slide-visible-once-left :duration="500"
-          :delay="skill.delay" />
+            <div class="skills">
+              <span v-for="skill in experience.skills" :key="skill.id" class="skill-item">
+        {{ skill.link}}
         &nbsp;
       </span>
-            </p>
+    </div>
           </div>
         </div>
       </div>
@@ -160,14 +159,28 @@ export default defineComponent({
 .details {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 1em 5em 0 5em;
+  gap:10%;
+  padding: 1em 0 0 2em;
 }
 
 .skills {
+  display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   margin: 0 2rem 0.5rem 2rem;
-  text-align: center;
 }
+
+.skill-item {
+    background: var(--vt-c-white-soft);
+    padding: 0.1rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 500;
+    color: var(--alainblue-dark-20);
+    background: var(--alainblue-light-30);
+    transition: all 0.3s ease;
+    cursor: default;
+    white-space: nowrap;
+  }
 
 a {
   text-decoration: none;
