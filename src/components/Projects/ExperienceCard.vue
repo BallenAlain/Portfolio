@@ -104,7 +104,6 @@ export default defineComponent({
   justify-content: center;
   gap: 2rem;
   padding: 10rem 5%;
-  padding-bottom: 40rem;
   max-height: none;
   opacity: 0;
   transform: translate(0, 10vh);
