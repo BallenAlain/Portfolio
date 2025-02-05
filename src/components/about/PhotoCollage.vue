@@ -42,7 +42,7 @@ const closeModal = () => {
 .photo-container {
     padding: 40px 0;
     width: 500px;
-    text-align: right;
+    text-align: left;
 }
 
 .photo-gallery {
@@ -65,7 +65,7 @@ const closeModal = () => {
 .photo img {
     width: 100%;
     height: 100%;
-    border-radius: 5px;
+    border-radius: 20px;
     object-fit: cover;
 }
 

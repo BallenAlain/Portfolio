@@ -9,33 +9,29 @@ const items = jsonData
 <template>
   <div class="about">
     <div>
-      <h1>Meet <span class="name">Alain</span></h1>
+      
       <div class="about-content">
-        <p>I am a recent Software Engineering graduate from York University, eager to start a career in software
-          development.
-          With a strong foundation in backend development, I honed my skills through hands-on experience in
-          building mobile applications,
-          interactive dashboards, and tools leveraging Large Language Models (LLMs). Passionate about creating secure,
-          scalable, and impactful software,
+        <h1>Hi, I'm <span class="name">Alain</span></h1>
+        <p>A recent Software Engineering graduate from York University, eager to start a career in software
+          development.</p><br>
+          <p>
+          With a strong foundation in backend development, I am passionate about creating secure and
+          scalable software leveraging LLM tools.
           I thrive on simplifying common workflows and delivering solutions that make an impact.</p><br>
         <p>While I excel in backend development, I am also eager about exploring full-stack development and
-          expanding my expertise. Additionally,
-          I am passionate by the world of AI, particularly the applications of LLMs and their potential to transform
-          industries.</p><br>
-        <p>Driven by curiosity and a commitment to continuous learning, I actively seek new graduate roles
-          where I can contribute to
-          innovative projects, grow as a developer, and make a meaningful impact in the tech industry.</p>
+          expanding my expertise.
+          </p><br>
         <br>
-        <br>
-        <p class="connect">Lets connect!</p>
+        <h1 class="connect">Lets connect!</h1>
         <div class="about-link-container">
-          <AboutLink v-for="item in items" :key="item.link" :text="item.text" :name="item.name" :link="item.link" />
+          <AboutLink v-for="item in items" :key="item.link" :text="item.text" :name="item.name" :link="item.link" /><br><br>
+          
         </div>
-
+        (scroll down<v-icon name="fa-angle-double-down" />)
       </div>
     </div>
 
-    <img class="image" src="/assets/myself.png" width="301" height="460">
+    <img class="image" src="/assets/myself.png" >
 
   </div>
   <div class="personal">
@@ -61,20 +57,15 @@ const items = jsonData
 .about {
   min-height: auto;
   display: flex;
-  padding: 5em 10em 0 10em;
+  flex-direction: row;
+  padding: 5em 20em 10em 20em;
   align-items: flex-start;
-  gap: 10vw;
-  padding-bottom: 10em;
+  gap:20%;
 }
 
 .about h1 {
   white-space: nowrap;
   font-size: 3rem;
-}
-
-.connect {
-  font-weight: bold;
-  font-size: 30px;
 }
 
 .about-content {
@@ -91,16 +82,15 @@ const items = jsonData
 }
 
 .personal {
-  padding-left: 10em;
+  padding: 0 20em;
   display: flex;
   align-items: flex-start;
-  gap:20%;
 }
 
 .image {
-  width: 300px;
+  width: 400px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .personal-text {
@@ -114,6 +104,14 @@ const items = jsonData
 .personal-text ul {
   padding: 0;
   list-style-type: none;
+}
+
+p {
+  font-size: 18px;
+}
+
+h1{
+  font-size: 26px;
 }
 
 @media (max-width: 1400px) {
