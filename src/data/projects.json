@@ -119,7 +119,7 @@
     "company": "Parking System",
     "product": "Backend",
     "productDetails": "A system designed to manage parking spaces within a parking lot all within a Java GUI. Offers support for parking management and new parking lot registration with payment support.",
-    "imagePath": "/parking.png",
+    "imagePath": "/assets/parking.png",
     "skills": [
       {
         "id": 1,
