@@ -61,7 +61,7 @@
     "company": "Pillminder",
     "product": "Backend",
     "productDetails": "Keep track of your prescription medication all within an app. Sends you reminders via text, SMS, or email when to take your medication. Simply take a picture of prescription and the app will parse the necessary data.",
-    "imagePath": "/assets/nuula.png",
+    "imagePath": "/assets/pillminder.png",
     "skills": [
       {
         "id": 1,
