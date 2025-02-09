@@ -175,7 +175,7 @@ export default defineComponent({
 }
 
 .image-container {
-  max-width: 100%;
+  max-width: 600px;
   height: auto;
   padding: 1rem;
   cursor: pointer;

@@ -54,8 +54,9 @@ import skills from '@/data/skills.json'
   flex-direction: column;
   text-align: center;
   align-items: center;
-  min-height: 90vh;
-  padding-top: 5%;
+  min-height: 95vh;
+  padding-top: 2.5%;
+  padding-bottom:5%;
 }
 
 .text-image {
