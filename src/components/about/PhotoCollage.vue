@@ -150,7 +150,6 @@ const closeModal = () => {
         border-radius: 8px;
     }
     
-    /* Modal mobile fixes */
     .modal-content {
         max-width: 95%;
         padding: 10px;

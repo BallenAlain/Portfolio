@@ -156,8 +156,8 @@ h1{
   .photo-collage {
     width: 100%;
     display: flex;
-    justify-content: center; /* Add this */
-    margin: 0 auto; /* Add this */
+    justify-content: center;
+    margin: 0 auto;
   }
 }
 </style>
