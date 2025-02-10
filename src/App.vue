@@ -2,6 +2,7 @@
 import { RouterView } from 'vue-router'
 import NavBar from './components/NavBar.vue'
 import CopyrightFooter from './components/CopyrightFooter.vue'
+import { Analytics } from "@vercel/analytics/react"
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import CopyrightFooter from './components/CopyrightFooter.vue'
   <main>
     <div class="content-container">
       <RouterView v-motion-fade duration="300" />
+      <Analytics />
     </div>
   </main>
   <CopyrightFooter />
