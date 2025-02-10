@@ -2,7 +2,7 @@
 import jsonData from '@/data/projects.json'
 import ExperienceCard from '@/components/Projects/ExperienceCard.vue';
 
-const items = jsonData;
+const items = jsonData.projects;
 </script>
 
 <template>
