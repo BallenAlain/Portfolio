@@ -6,6 +6,7 @@
 
 <style scoped>
 .copyright-footer {
+  position: relative;
   bottom: 0;
   left: 0rem;
   padding: 1rem 1rem 1rem 2rem;

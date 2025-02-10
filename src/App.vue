@@ -6,16 +6,18 @@ import { Analytics } from "@vercel/analytics/vue"
 </script>
 
 <template>
+  <Analytics />
   <header>
     <NavBar />
   </header>
   <main>
     <div class="content-container">
       <RouterView v-motion-fade duration="300" />
-      <Analytics />
     </div>
   </main>
-  <CopyrightFooter />
+  <footer>
+    <CopyrightFooter />
+  </footer>
 </template>
 
 <style scoped>
@@ -29,6 +31,7 @@ header {
 }
 
 .content-container {
+  min-height: calc(100vh - 55.03px);
   padding-top: 5rem;
   padding-bottom: 5rem;
   width: 100%;
