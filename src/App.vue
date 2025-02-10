@@ -2,7 +2,7 @@
 import { RouterView } from 'vue-router'
 import NavBar from './components/NavBar.vue'
 import CopyrightFooter from './components/CopyrightFooter.vue'
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/vue"
 </script>
 
 <template>
