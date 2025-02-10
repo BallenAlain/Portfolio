@@ -33,7 +33,7 @@ header {
 .content-container {
   min-height: calc(100vh - 55.03px);
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
   width: 100%;
   background-color: white;
 }

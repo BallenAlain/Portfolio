@@ -94,7 +94,7 @@ h2 {
   background-color: var(--vt-c-white-mute);
 }
 .work-section-container {
-  padding:15em 0;
+  padding:15em 0 10em 0;
 }
 
 @media (max-width: 1240px) {
