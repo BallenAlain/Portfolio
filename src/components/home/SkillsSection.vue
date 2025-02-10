@@ -157,8 +157,8 @@ export default defineComponent({
   padding: 0.1rem 1.2rem;
   border-radius: 20px;
   font-weight: 500;
-  color: var(--alainblue-dark-20);
-  background: var(--alainblue-light-30);
+  color: var(--c-white);
+  background: var(--alainblue);
   transition: all 0.3s ease;
   cursor: default;
   white-space: nowrap;
@@ -179,7 +179,7 @@ export default defineComponent({
 .icon-image {
   width: 20em;
   height: 20em;
-  fill: #4b7ced;
+  fill: var(--alainblue);
 }
 
 @media (max-width: 1024px) {
