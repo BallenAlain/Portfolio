@@ -58,7 +58,7 @@ const items = jsonData
   min-height: auto;
   display: flex;
   flex-direction: row;
-  padding: 5em 20em 10em 20em;
+  padding: 5em 15em 10em 15em;
   align-items: flex-start;
   gap:20%;
 }
@@ -114,50 +114,77 @@ h1{
   font-size: 26px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1000px) {
+  .image {
+    order: -1;
+  }
+
   .about {
-    padding: 5em 0 0 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 5em;
+    text-align: center;
   }
+
   .personal {
-    padding-top:5em;
+    padding: 3em 5em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  .personal-text h2 {
-  white-space: wrap;
-}
-.personal {
-  display: flex;
-  align-items: flex-start;
-  gap:8%;
-}
 }
 
 @media (max-width: 720px) {
   .about {
-    align-items: center;
-    display: flex;
     flex-direction: column;
+    gap: 1.5em;
+    padding: 2em 1em;
+    text-align: center;
   }
 
-  .about-link-container {
-    display: inline-block;
-    flex-wrap: wrap;
-    gap: 10vw;
+  .about h1 {
+    font-size: 2rem;
   }
 
   .image {
-    order: -1;
+    width: 90%;
+    max-width: 300px;
   }
-  .personal {
-    display:flex;
+
+  .about-link-container {
+    display: flex;
     flex-direction: column;
-    max-width:90%;
+    align-items: center;
+  }
+
+  .personal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 1em;
+    text-align: center;
   }
 
   .photo-collage {
-    width: 100%;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+  }
+
+  .personal-text h2 {
+    font-size: 1.5rem;
+    white-space: normal;
+  }
+
+  .personal-text ul {
+    text-align: left;
+    padding-left: 1em;
+  }
+
+  .personal-text ul li {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
 }
 </style>
