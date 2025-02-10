@@ -79,7 +79,9 @@ export default defineComponent({
 
     </div>
     <div class="image-container" v-motion-slide-visible-left :duration="500" :delay="200">
+      <router-link :to="path">
       <img class="image" :src="imagePath" />
+    </router-link>
     </div>
   </div>
 </template>
