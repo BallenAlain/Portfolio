@@ -52,6 +52,10 @@ export default defineComponent({
       type: String,
       required: true,
     },
+    loadingType: {
+      type: String as () => 'eager' | 'lazy',
+      required: true,
+    },
   },
 })
 </script>
@@ -78,9 +82,9 @@ export default defineComponent({
       </span>
 
     </div>
-    <div class="image-container" v-motion-slide-visible-left :duration="500" :delay="200">
+    <div class="image-container" v-motion-slide-visible-left :duration="500" :delay="100">
       <router-link :to="path">
-      <img class="image" :src="imagePath" loading="lazy"/>
+      <img class="image" :src="imagePath" :loading="loadingType"/>
     </router-link>
     </div>
   </div>

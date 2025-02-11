@@ -24,7 +24,7 @@ const closeModal = () => {
         <div class="photo-gallery">
             <div class="column" v-for="photo in photos" :key="photo" @click="openModal(photo)">
                 <div class="photo" >
-                    <img :src="photo" loading="lazy">
+                    <img :src="photo">
                 </div>
             </div>
         </div>

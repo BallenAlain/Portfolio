@@ -27,7 +27,8 @@
         "delay": 3000
       }
     ],
-    "path": "/llmproxy"
+    "path": "/llmproxy",
+    "loading": "eager"
   },
   {
     "company": "Pillminder",
@@ -56,7 +57,8 @@
         "delay": 3000
       }
     ],
-    "path": "/pillminder"
+    "path": "/pillminder",
+    "loading": "eager"
   },
   {
     "company": "Venngram",
@@ -85,7 +87,8 @@
         "delay": 3000
       }
     ],
-    "path": "/venngram"
+    "path": "/venngram",
+    "loading": "lazy"
   },
   {
     "company": "Parking System",
@@ -104,7 +107,8 @@
         "delay": 2000
       }
     ],
-    "path": "/parking-system"
+    "path": "/parking-system",
+    "loading": "lazy"
   }
 ],
 "_to-be-added-later-(remove-for-now)" : {
@@ -134,7 +138,8 @@
       "delay": 3000
     }
   ],
-  "path": "/healthlk"
+  "path": "/healthlk",
+  "loading": "lazy"
 }
 }
 

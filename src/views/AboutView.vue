@@ -31,7 +31,7 @@ const items = jsonData
       </div>
     </div>
 
-    <img class="image" src="/assets/myself.png" loading="lazy">
+    <img class="image" src="/assets/myself.png">
 
   </div>
   <div class="personal">

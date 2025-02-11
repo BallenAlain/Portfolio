@@ -2,7 +2,10 @@
 import jsonData from '@/data/projects.json'
 import ExperienceCard from '@/components/Projects/ExperienceCard.vue';
 
-const items = jsonData.projects;
+const items = jsonData.projects.map(project => ({
+  ...project,
+  loading: project.loading as 'eager' | 'lazy' // Type assertion
+}));
 </script>
 
 <template>
@@ -18,6 +21,7 @@ const items = jsonData.projects;
         :imagePath="work.imagePath"
         :skillsIcon="work.skills"
         :path="work.path"
+        :loadingType="work.loading"
       />
     </div>
     </main>
