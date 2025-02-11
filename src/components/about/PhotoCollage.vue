@@ -24,7 +24,7 @@ const closeModal = () => {
         <div class="photo-gallery">
             <div class="column" v-for="photo in photos" :key="photo" @click="openModal(photo)">
                 <div class="photo" >
-                    <img :src="photo">
+                    <img :src="photo" loading="lazy">
                 </div>
             </div>
         </div>
@@ -32,7 +32,7 @@ const closeModal = () => {
         <div v-if="selectedPhoto" class="modal-overlay" @click.self="closeModal">
             <div class="modal-content">
                 <span class="close-btn" @click="closeModal">&times;</span>
-                <img :src="selectedPhoto" class="modal-image">
+                <img :src="selectedPhoto" class="modal-image" loading="lazy">
             </div>
         </div>
     </div>
