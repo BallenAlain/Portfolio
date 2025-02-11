@@ -18,9 +18,6 @@ const items = jsonData
           With a strong foundation in backend development, I am passionate about creating secure and
           scalable software leveraging LLM tools.
           I thrive on simplifying common workflows and delivering solutions that make an impact.</p><br>
-        <p>While I excel in backend development, I am also eager about exploring full-stack development and
-          expanding my expertise.
-          </p><br>
         <br>
         <h1 class="connect">Lets connect!</h1>
         <div class="about-link-container">
