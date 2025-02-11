@@ -172,11 +172,11 @@ export default defineComponent({
 
 .skill-item {
     background: var(--vt-c-white-soft);
-    padding: 0.1rem 1.2rem;
+    padding: 0.1rem 0.8rem;
     border-radius: 20px;
     font-weight: 500;
-    color: var(--alainblue-dark-20);
-    background: var(--alainblue-light-30);
+    color: var(--c-white);
+    background: var(--alainblue);
     transition: all 0.3s ease;
     cursor: default;
     white-space: nowrap;
