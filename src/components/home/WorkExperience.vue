@@ -18,7 +18,7 @@
                 {{ experience.Location }}
               </p>
               <p clas="link">
-                <a :href="experience.Link">
+                <a :href="links[index]">
                 <v-icon name="hi-external-link" fill="#4b7ced" scale="1.2"/>
                 {{ experience.Link }}
               </a>
@@ -48,6 +48,10 @@ export default defineComponent({
     const activeTab = ref<number | null>(null);
 
     const experiences = professionalExperience;
+    const links: Array<string> = [];
+    professionalExperience.forEach((e) => {
+      links.push("https://www." + e.Link);
+    })
 
     const toggleTab = (index: number) => {
       activeTab.value = activeTab.value === index ? null : index;
@@ -55,6 +59,7 @@ export default defineComponent({
 
     return {
       experiences,
+      links,
       activeTab,
       toggleTab,
     };
