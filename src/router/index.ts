@@ -52,6 +52,11 @@ const router = createRouter({
       name: 'projects',
       component: () => import('../views/ProjectsView.vue'),
     },
+    {
+      // 404 fallback
+      path: "*", 
+      component: HomeView
+    }
   ],
 })
 
