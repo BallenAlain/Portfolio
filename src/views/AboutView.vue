@@ -37,12 +37,12 @@ const items = jsonData
           </div>
           <div>
             <div class="personal-text">
-              <h2>Beyond the lines of code, <span class="name">catch me: </span></h2>
+              <h2>Beyond the lines of code, <span class="name">catch me: </span></h2><br>
             <ul>
-              <li><v-icon name="bi-check-all" scale="1.3" fill="#4b7ced"/>&nbsp;In the gym 🏋️</li><br>
-              <li><v-icon name="bi-check-all" scale="1.3" fill="#4b7ced"/>Going out for a paddle on an outrigger canoe 🛶</li><br>
-              <li><v-icon name="bi-check-all" scale="1.3" fill="#4b7ced"/>Training hard on the water for dragon boat racing 🐲</li><br>
-              <li><v-icon name="bi-check-all" scale="1.3" fill="#4b7ced"/>Trying out new food (brand ambassador @torontomunching) 🍣</li><br>
+              <li><v-icon name="bi-check-all" scale="1.3" fill="#4b7ced"/>&nbsp;In the gym 🏋️</li>
+              <li><v-icon name="bi-check-all" scale="1.3" fill="#4b7ced"/>Going out for a paddle on an outrigger canoe 🛶</li>
+              <li><v-icon name="bi-check-all" scale="1.3" fill="#4b7ced"/>Training hard on the water for dragon boat racing 🐲</li>
+              <li><v-icon name="bi-check-all" scale="1.3" fill="#4b7ced"/>Trying out new food (brand ambassador @torontomunching) 🍣</li>
               <li><v-icon name="bi-check-all" scale="1.3" fill="#4b7ced"/>Exploring new places! ✈️</li><br>
             </ul>
             </div>
@@ -92,10 +92,12 @@ const items = jsonData
 
 .personal-text {
   padding-top: 3em;
+  font-size: clamp(1rem, 3vw, 1.6rem);
 }
 
 .personal-text h2 {
   white-space: nowrap;
+  font-size: clamp(1rem, 3vw, 1.6rem);
 }
 
 .personal-text ul {

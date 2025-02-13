@@ -135,16 +135,16 @@ export default defineComponent({
 }
 
 .card-content h1 {
-  font-size: clamp(1.0rem, 4vw, 2.5rem);
+  font-size: clamp(2.0rem, 4vw, 2.5rem);
   margin-bottom: 1rem;
 }
 
 .card-content h3 {
-  font-size: clamp(0.4rem, 3vw, 1.6rem);
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
 }
 
 .card-content p {
-  font-size: clamp(0.3rem, 2vw, 1rem);
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
@@ -152,6 +152,7 @@ export default defineComponent({
 .learn-more {
   display: inline-block;
   text-decoration: none;
+  
 }
 
 .link {
@@ -160,7 +161,7 @@ export default defineComponent({
   text-decoration: none;
   transition: transform 0.3s ease;
   padding-bottom: 3px;
-  font-size: clamp(0.6rem, 2vw, 1.3rem);
+  font-size: clamp(1.2rem, 3vw, 1.3rem);
   background-image: linear-gradient(to right, var(--text-dark-soft) 0%, var(--text-dark-soft) 100%);
   background-size: 0% 2px;
   background-position: left bottom;
