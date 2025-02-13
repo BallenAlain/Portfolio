@@ -54,8 +54,8 @@ const router = createRouter({
     },
     {
       // 404 fallback
-      path: "*", 
-      component: HomeView
+      path: '/:pathMatch(.*)*',
+      redirect: "/",
     }
   ],
 })
