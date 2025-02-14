@@ -4,23 +4,23 @@ import ProjectLearnMore from '@/components/Projects/ProjectLearnMore.vue';
 const data = [
   {
     "header":"Project Overview & Background",
-    "body" : "text"
+    "body" : '<em>WIP</em>'
   },
   {
     "header":"How We Built It",
-    "body" : "text"
+    "body" : '<em>WIP</em>'
   },
   {
     "header":"Challenges Faced",
-    "body" : "text"
+    "body" : '<em>WIP</em>'
   },
   {
     "header":"Lessons Learned",
-    "body" : "text"
+    "body" : '<em>WIP</em>'
   },
   {
     "header":"What's Next?",
-    "body" : "text"
+    "body" : '<em>WIP</em>'
   },
   {
     "header":"Link",

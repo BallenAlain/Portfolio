@@ -16,11 +16,11 @@ const data = [
   },
   {
     "header":"Lessons Learned",
-    "body" : "text"
+    "body" : '<em>WIP</em>'
   },
   {
     "header":"What's Next?",
-    "body" : "text"
+    "body" : '<em>WIP</em>'
   },
   {
     "header":"Link",
