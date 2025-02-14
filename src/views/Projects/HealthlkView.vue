@@ -1,17 +1,36 @@
+<script setup lang="ts">
+import ProjectLearnMore from '@/components/Projects/ProjectLearnMore.vue';
+
+const data = [
+  {
+    "header": "Project Overview & Background",
+    "body": "text"
+  },
+  {
+    "header": "My Role",
+    "body": "text"
+  },
+  {
+    "header": "Challenges Faced",
+    "body": "text"
+  },
+  {
+    "header": "Results & Impact",
+    "body": "text"
+  },
+  {
+    "header": "Lessons Learned",
+    "body": "text"
+  },
+  {
+    "header": "What's Next?",
+    "body": "text"
+  },
+]
+</script>
+
 <template>
-  <div class="about">
-    <h1>Healthlk</h1>
-    <br />
-    <h2><i>Under Construction...</i></h2>
+  <div class="container">
+    <ProjectLearnMore :data="data" />
   </div>
 </template>
-
-<style scoped>
-  .about {
-    max-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding-top: 20%;
-    align-items: center;
-  }
-</style>

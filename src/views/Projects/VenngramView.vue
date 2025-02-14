@@ -1,18 +1,36 @@
+<script setup lang="ts">
+import ProjectLearnMore from '@/components/Projects/ProjectLearnMore.vue';
+
+const data = [
+  {
+    "header":"Project Overview & Background",
+    "body" : "text"
+  },
+  {
+    "header":"How We Built It",
+    "body" : "text"
+  },
+  {
+    "header":"Challenges Faced",
+    "body" : "text"
+  },
+  {
+    "header":"Lessons Learned",
+    "body" : "text"
+  },
+  {
+    "header":"What's Next?",
+    "body" : "text"
+  },
+  {
+    "header":"Link",
+    "body" : 'See the <a href="https://github.com/BallenAlain/Venngram/" style="text-decoration: none;">GitHub repository</a>'
+  },
+]
+</script>
+
 <template>
-    <div class="about">
-      <h1>Venngram</h1>
-      <br />
-      <h2><i>Under Construction...</i></h2>
-    </div>
-  </template>
-  
-  <style scoped>
-    .about {
-      max-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      padding-top: 20%;
-      align-items: center;
-    }
-  </style>
-  
+  <div class="container">
+    <ProjectLearnMore :data="data" />
+  </div>
+</template>

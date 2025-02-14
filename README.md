@@ -1,6 +1,6 @@
 # portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+Check out the [repository](https://github.com/BallenAlain/portfolio-streamlit-app) for the streamlit application
 
 ## to-do
 
