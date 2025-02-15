@@ -14,7 +14,8 @@ import {
     AiIdeasRepec,
     MdLocationonSharp,
     AiObpSquare,
-    FaAngleDoubleDown
+    FaAngleDoubleDown,
+    CoArrowCircleLeft
 } from "oh-vue-icons/icons";
 
 addIcons(HiExternalLink,
@@ -25,7 +26,8 @@ addIcons(HiExternalLink,
     AiIdeasRepec,
     MdLocationonSharp,
     AiObpSquare,
-    FaAngleDoubleDown);
+    FaAngleDoubleDown,
+    CoArrowCircleLeft);
 
 const app = createApp(App)
 app.component("v-icon", OhVueIcon);
