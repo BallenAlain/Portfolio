@@ -8,7 +8,7 @@ const data = [
   },
   {
     "header": "My Role",
-    "body": '<em></em>'
+    "body": 'As a software developer <span style="color: var(--alainblue)">leading</span> the backend development at Healthlk, I have played an important role in shaping the technical foundation of the platform. My responsibilities include decision-making, training new hires, and designing efficient workflows that ensure seamless collaboration among cross-functional teams.<br><br> My key contributions include:<li><span style="color: var(--alainblue)">Team Leadership & Collaboration:</span> Led a team of 5 backend developers in building a scalable mobile and web application using Flutter</li><li><span style="color: var(--alainblue)">Secure User Authentication:</span> Designed a robust user authentication and account creation flow using Firebase Authentication which includes OAuth providers</li><li><span style="color: var(--alainblue)">Efficient Data Handling:</span> Designed a secure document uploading pipeline with Google Cloud Functions to manage sensitive data. It incorporates encryption and strict access controls</li>'
   },
   {
     "header": "Challenges Faced",
@@ -21,6 +21,10 @@ const data = [
   {
     "header": "Lessons Learned",
     "body": '<em>WIP</em>'
+  },
+  {
+    "header": "Additional Notes",
+    "body": 'Healthlk will soon be released on Apple\'s App Store for iOS devices and Google\'s Playstore for Android devices.'
   },
 ]
 </script>
