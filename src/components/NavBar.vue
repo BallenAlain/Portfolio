@@ -5,7 +5,7 @@
         <span class="name-box">
           <img src="/assets/ab.png" alt="Logo" width="40" height="40" />
         </span>
-        <span class="name">ALAIN BALLEN</span>
+        <h1 class="name">ALAIN BALLEN</h1>
       </router-link>
 
       <!-- Hamburger Menu Button (Mobile) -->
@@ -25,9 +25,9 @@
         :class="{ 'active': isMenuOpen }"
         @click="closeMenu"
       >
-        <router-link to="/chat" class="nav-link"> Chat </router-link>
-        <router-link to="/about" class="nav-link"> About </router-link>
-        <router-link to="/projects" class="nav-link"> Projects </router-link>
+        <router-link to="/chat" class="nav-link"> <h3>Chat</h3> </router-link>
+        <router-link to="/about" class="nav-link"> <h3>About</h3>  </router-link>
+        <router-link to="/projects" class="nav-link"> <h3>Projects</h3>  </router-link>
       </div>
     </div>
   </nav>

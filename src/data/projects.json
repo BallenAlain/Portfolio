@@ -85,6 +85,11 @@
           "id": 4,
           "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
           "delay": 3000
+        },
+        {
+          "id": 5,
+          "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
+          "delay": 3500
         }
       ],
       "path": "/pillminder",

@@ -12,15 +12,11 @@ const data = [
   },
   {
     "header": "Challenges Faced",
-    "body": '<em>WIP</em>'
-  },
-  {
-    "header": "Results & Impact",
-    "body": '<em>WIP</em>'
+    "body": '<span style="color:var(--alainblue)">Refactoring Legacy Code</span>: I was tasked with refactoring existing features to comply with changing requirements. I tackled this challenge by first testing in chunks to gain an understanding of the current behaviour. If the code is complex or tightly coupled, I create a map of the underlying architecture to understand how components interact with each other. I then proceed with incremental refactory, tackling small and manageable parts incrementally. Once the refactor is completed, I discuss with teammates (other developers and QA) my implementation through code reviews and demos to validate my changes. To ensure I do not break existing functionality, I ensure good version control practices by using a specified feature branch.<br><br><span style="color: var(--alainblue)">Ensuring Consistent Code Quality</span>: We are a team working in a remote environment with some working in different time zones. To ensure consistent code quality, I first discussed some of the pain points we are facing in regards to consistency. Some of the issues we brought up is inconsistent practices between team members, different automated formatting tools, and no formal way of providing feedback on other member\'s work. To solve this, I proposed and implemented a set of coding standards that involved widespread use of automated formatting tools (VS Code extensions, ESLint, Prettier) and advocated the use of pull requests/feature branches.'
   },
   {
     "header": "Lessons Learned",
-    "body": '<em>WIP</em>'
+    "body": "<li>Designing accessible and responsive UI</li><li>BLoC pattern for state management</li><li>Advantages of NoSQL databases</li><li>Benefits of a serverless backend with Firebase</li><li>Training and onboarding new backend developers</li>"
   },
   {
     "header": "Additional Notes",
