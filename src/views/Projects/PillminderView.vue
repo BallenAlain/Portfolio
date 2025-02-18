@@ -26,7 +26,7 @@ const data = [
   },
   {
     "header":"Link",
-    "body" : 'See the <a href="https://github.com/CUNY-Hackathon-2021/Pillminder" style="text-decoration: none;">GitHub repository</a>'
+    "body" : 'See the <a href="https://github.com/CUNY-Hackathon-2021/Pillminder" target="_blank" style="text-decoration: none;">GitHub repository</a>'
   },
 ]
 </script>

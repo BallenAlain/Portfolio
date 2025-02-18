@@ -41,7 +41,7 @@ export default defineComponent({
 .icon-container {
     padding-top: 4.5rem;
     padding-left: 11%;
-    padding-right: 1.5%
+    padding-right: 1.5%;
 }
 .icon {
     transform: scale(3);

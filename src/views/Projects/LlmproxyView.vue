@@ -24,7 +24,7 @@ const data = [
   },
   {
     "header":"Link",
-    "body" : 'See the <a href="https://github.com/llm-proxy/llm-proxy" style="text-decoration: none;">GitHub repository</a><br>Check out the package on <a href="https://pypi.org/project/proxyllm/" style="text-decoration: none;">PyPi</a>'
+    "body" : 'See the <a href="https://github.com/llm-proxy/llm-proxy" target="_blank" style="text-decoration: none;">GitHub repository</a><br>Check out the package on <a href="https://pypi.org/project/proxyllm/" target="_blank" style="text-decoration: none;">PyPi</a>'
   },
 ]
 </script>

@@ -3,8 +3,8 @@ import ProjectLearnMore from '@/components/Projects/ProjectLearnMore.vue';
 
 const data = [
   {
-    "header":"Project Overview & Background",
-    "body" : '<em>WIP</em>'
+    "header":"Project Overview",
+    "body":'<em>WIP</em>'
   },
   {
     "header":"How We Built It",
@@ -24,7 +24,7 @@ const data = [
   },
   {
     "header":"Link",
-    "body" : 'See the <a href="https://github.com/BallenAlain/Venngram/" style="text-decoration: none;">GitHub repository</a>'
+    "body" : 'See the <a href="https://github.com/BallenAlain/Venngram/" target="_blank" style="text-decoration: none;">GitHub repository</a>'
   },
 ]
 </script>
