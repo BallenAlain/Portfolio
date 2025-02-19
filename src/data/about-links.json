@@ -17,6 +17,6 @@
     {
         "text": "Take a look at my ",
         "name": "resume",
-        "link": "http://localhost:5173/src/assets/resume.pdf"
+        "link": "/assets/resume.pdf"
     }
 ]
