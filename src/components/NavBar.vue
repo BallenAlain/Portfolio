@@ -25,7 +25,7 @@
         :class="{ 'active': isMenuOpen }"
         @click="closeMenu"
       >
-        <router-link to="/chat" class="nav-link"> <h3>Chat</h3> </router-link>
+        <router-link to="/chat" class="nav-link"> <h3>AI Assistant</h3> </router-link>
         <router-link to="/about" class="nav-link"> <h3>About</h3>  </router-link>
         <router-link to="/projects" class="nav-link"> <h3>Projects</h3>  </router-link>
       </div>
