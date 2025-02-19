@@ -56,7 +56,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <img ref="heroImage" src="/assets/animation-hero.gif" alt="Logo" class="hero-image" />
+  <img ref="heroImage" src="/assets/animation-hero.webm" alt="Logo" class="hero-image" />
 </template>
 
 <style scoped>
