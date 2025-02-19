@@ -19,7 +19,7 @@ export default defineComponent({
 <template>
     <div class="container">
     <div class="icon-container">
-        <router-link to="/projects" class="name">
+        <router-link to="/projects">
      <v-icon name="co-arrow-circle-left" class="icon" color="#4b7ced"/>
     </router-link>
     </div>
@@ -45,7 +45,7 @@ export default defineComponent({
 }
 .icon {
     transform: scale(3);
-    transition: transform 0.5s ease, color 0.5s ease;
+    transition: color 0.5s ease;
     transition: color 0.5s ease;
 }
 
@@ -53,6 +53,7 @@ export default defineComponent({
     color: var(--text-dark-soft);
     cursor: pointer;
 }
+
 .about {
     display: flex;
     flex-direction: column;
@@ -71,14 +72,49 @@ export default defineComponent({
 }
 
 @media (max-width: 768px) {
+    .icon-container {
+    padding-left: 1.5em;
+}
+
+    .container {
+        flex-direction: column;
+    }
+
     .icon {
         transform: scale(2.5);
+    }
+
+    .about {
+        padding: 2em 1.5em 0 1.5em;
     }
 }
 
 @media (max-width: 480px) {
     .icon {
         transform: scale(2);
+    }
+    .about h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .about p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+
+    .about {
+        padding: 1.5em 1em 0 1em;
+    }
+}
+
+@media (max-width: 360px) {
+    .about h1 {
+        font-size: 1.6rem;
+    }
+
+    .about p {
+        font-size: 1rem;
     }
 }
 

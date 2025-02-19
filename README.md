@@ -4,6 +4,6 @@ Check out the [repository](https://github.com/BallenAlain/portfolio-streamlit-ap
 
 ## to-do
 
-- [ x ] AI chat bot assistant
+- [x] AI chat bot assistant
 - [ ] GitHub actions for linting
-- [ x ] Optimize loading large images
+- [x] Optimize loading large images
