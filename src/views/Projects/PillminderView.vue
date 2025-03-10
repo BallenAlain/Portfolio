@@ -22,7 +22,7 @@ const data = [
   },
   {
     "header":"What's Next?",
-    "body" : '<li>Pair with smart home devices (Alexa, Google Home) to send notifications</li><li>Develop a mobile version to be deployed on Google\'s Play Store and Apple\'s App Store'
+    "body" : '<li>Pair with smart home devices (Alexa, Google Home) to send notifications</li><li>Develop an iOS version to be deployed on Apple\'s App Store'
   },
   {
     "header":"Link",
