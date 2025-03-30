@@ -61,8 +61,7 @@ export default defineComponent({
 .typewriter {
   display: inline-block;
   color: var(--text-dark-soft);
-  min-width: 22vw;
-  max-width: 22vw;
+  max-width: 23vw;
   font-size: 1.2em;
   line-height: 1.2;
   white-space: pre-wrap;
@@ -99,8 +98,6 @@ export default defineComponent({
 
 @media (max-width: 768px) {
   .typewriter {
-    min-width: 60vw;
-    max-width: 100vw;
     font-size: 1em;
   }
 }
