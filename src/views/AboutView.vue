@@ -31,7 +31,6 @@ const items = jsonData
           <AboutLink v-for="item in items" :key="item.link" :text="item.text" :name="item.name" :link="item.link" /><br><br>
           
         </div>
-        (scroll down<v-icon name="fa-angle-double-down" />)
       </div>
 
     <img class="image" src="/assets/myself.png">

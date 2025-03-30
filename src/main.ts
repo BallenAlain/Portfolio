@@ -14,7 +14,6 @@ import {
     AiIdeasRepec,
     MdLocationonSharp,
     AiObpSquare,
-    FaAngleDoubleDown,
     CoArrowCircleLeft
 } from "oh-vue-icons/icons";
 
@@ -26,7 +25,6 @@ addIcons(HiExternalLink,
     AiIdeasRepec,
     MdLocationonSharp,
     AiObpSquare,
-    FaAngleDoubleDown,
     CoArrowCircleLeft);
 
 const app = createApp(App)
