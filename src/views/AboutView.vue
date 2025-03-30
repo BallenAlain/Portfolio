@@ -1,14 +1,12 @@
 <script setup lang="ts">
 import jsonData from '@/data/about-links.json'
 import AboutLink from '@/components/about/AboutLink.vue';
-import PhotoCollage from '@/components/about/PhotoCollage.vue';
 
 const items = jsonData
 </script>
 
 <template>
   <div class="about">
-    <div>
       
       <div class="about-content">
         <h1>Hi, I'm <span class="name">Alain</span></h1>
@@ -18,26 +16,8 @@ const items = jsonData
           With a strong foundation in backend development, I am passionate about creating secure and
           scalable software leveraging LLM tools.
           I thrive on simplifying common workflows and delivering solutions that make an impact.</p><br>
-        <br>
-        <h1 class="connect">Lets connect!</h1>
-        <div class="about-link-container">
-          <AboutLink v-for="item in items" :key="item.link" :text="item.text" :name="item.name" :link="item.link" /><br><br>
-          
-        </div>
-        (scroll down<v-icon name="fa-angle-double-down" />)
-      </div>
-    </div>
-
-    <img class="image" src="/assets/myself.png">
-
-  </div>
-  <div class="personal">
-          <div class="photo-collage">
-            <PhotoCollage />
-          </div>
-          <div>
-            <div class="personal-text">
-              <h2>Beyond the lines of code, <span class="name">catch me: </span></h2>
+        <div class="personal-text">
+              <p>Beyond the lines of code, <span class="name">catch me: </span></p>
             <ul>
               <li><v-icon name="bi-check-all" scale="1.3" fill="#4b7ced"/>&nbsp;In the gym 🏋️</li>
               <li><v-icon name="bi-check-all" scale="1.3" fill="#4b7ced"/>Going out for a paddle on an outrigger canoe 🛶</li>
@@ -46,8 +26,17 @@ const items = jsonData
               <li><v-icon name="bi-check-all" scale="1.3" fill="#4b7ced"/>Exploring new places! ✈️</li><br>
             </ul>
             </div>
-          </div>
+        <h1 class="connect">Lets connect!</h1>
+        <div class="about-link-container">
+          <AboutLink v-for="item in items" :key="item.link" :text="item.text" :name="item.name" :link="item.link" /><br><br>
+          
         </div>
+        (scroll down<v-icon name="fa-angle-double-down" />)
+      </div>
+
+    <img class="image" src="/assets/myself.png">
+
+  </div>
 </template>
 
 <style scoped>
@@ -55,7 +44,7 @@ const items = jsonData
   min-height: auto;
   display: flex;
   flex-direction: row;
-  padding: 5em 15em 10em 15em;
+  padding: 5em 15em 0 15em;
   align-items: flex-start;
   gap:20%;
 }
@@ -91,12 +80,6 @@ const items = jsonData
 }
 
 .personal-text {
-  padding-top: 3em;
-  font-size: clamp(1rem, 3vw, 18px);
-}
-
-.personal-text h2 {
-  white-space: nowrap;
   font-size: clamp(1rem, 3vw, 18px);
 }
 
@@ -164,14 +147,8 @@ h1{
     text-align: center;
   }
 
-  .photo-collage {
-    display: flex;
-    justify-content: center;
-  }
-
   .personal-text h2 {
     font-size: 1.5rem;
-    white-space: normal;
   }
 
   .personal-text ul {
