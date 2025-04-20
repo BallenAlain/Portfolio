@@ -16,6 +16,9 @@ const items = jsonData
           With a strong foundation in backend development, I am passionate about creating secure and
           scalable software leveraging LLM tools.
           I thrive on simplifying common workflows and delivering solutions that make an impact.</p><br>
+          <p class="current-work">
+            Currently working at <a href="https://mpacspark.ca/"><span class="name">MPAC</span></a> as a Junior Systems Developer
+          </p><br>
         <div class="personal-text">
               <p>Beyond the lines of code, <span class="name">catch me: </span></p>
             <ul>
@@ -59,6 +62,7 @@ const items = jsonData
 
 .about-content a {
   text-decoration: none;
+  color: inherit;
 }
 
 .about-link-container {
@@ -93,6 +97,10 @@ p {
 
 h1{
   font-size: 26px;
+}
+
+.current-work {
+  font-style: italic;
 }
 
 @media (max-width: 1000px) {
